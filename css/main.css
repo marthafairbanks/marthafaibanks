@@ -1,0 +1,17 @@
+body {
+  font-family: "Caveat Brush", cursive;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
+  background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px; }
+
+.rowHeader .nav {
+  font-size: 30px; }
+  .rowHeader .nav ul li {
+    text-decoration: none;
+    display: inline-block; }
+    .rowHeader .nav ul li .tinyCircle {
+      border: 2px solid black;
+      width: 10px;
+      height: 10px;
+      display: block;
+      border-radius: 100px;
+      margin-bottom: 2px; }

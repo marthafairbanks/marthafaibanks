@@ -1,0 +1,46 @@
+$mainFont:'Caveat Brush', cursive;
+
+
+
+body {
+    font-family: $mainFont;
+    //GRAPHPAPER
+    background:
+        linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(-90deg, transparent 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(transparent 1px, transparent 1px), transparent;
+    background-size:
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px;
+}
+
+.rowHeader {
+    .nav{
+        font-size: 30px;
+        ul {
+            li {
+                text-decoration: none;
+                display: inline-block;
+                .tinyCircle {
+                    border: 2px solid black;
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    border-radius: 100px;
+                    margin-bottom: 2px;
+                }
+            }    
+        }
+    }
+}
