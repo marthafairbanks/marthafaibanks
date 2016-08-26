@@ -4,38 +4,153 @@
 		<title>Oh hey!</title>
 		
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		
 		<link href= "css/main.css" rel="stylesheet">					
+		<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
 
-		<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-
-		<script src="https://use.fontawesome.com/64f6e46810.js"></script>	
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="https://use.fontawesome.com/64f6e46810.js"></script>
 		<script src = "https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script src = "js/main.js"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	</head>
 	<body>
 		<div class = "container-fluid">
+			
+			<!-- HEADER -->
 			<header class = "row rowHeader">
 				<div class = "col-xs-12 nav">
 					<ul>
-						<li>About Me</li>
+						<li class = "aboutMe">About Me</li>
 						<li>
 							<div class = "tinyCircle">
 							</div>
 						</li>
-
-						<li>Contact</li>
+						<li class = "selectedWorks">Selected Works</li>
 						<li>
 							<div class = "tinyCircle">
 							</div>
 						</li>
-						<li>Selected Works</li>
+						<li class = "contact">Contact</li>
 					</ul>
 				</div>
 			</header>
-		</div>		
+			<!-- INTRO -->
+			<div class = "row rowIntro show">
+				<div class = "col-xs-12 me">
+					<?xml version="1.0" encoding="utf-8"?>
+					<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="me" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 135 175" style="enable-background:new 0 0 135 175;" xml:space="preserve">
+						<ellipse id="head" class="st0" cx="67.6" cy="99.4" rx="62.1" ry="69.7"></ellipse>
+						<path id="bun" class="st1" d="M39.3,37.3c0,0-1.6-32.6,28.3-32.1s28.3,32.1,28.3,32.1"></path>
+						<path id="bangs" class="st2" d="M126.1,117.2c-4.7-1.4-6.6-43.4-6.6-43.4l-15,19.8l-7.4-17.9L81.3,95.2l-6.3-20L62.8,91.1l-9.5-19.4
+							l-11,22.5L36,77.7l-9,16.8L15.2,74.1c0,0-5.7,42.2-6.6,43.1"></path>
+						<path id="leftEyeTopLid" class="st3" d="M60.4,111.8c-0.4-0.4-0.7-0.8-1.1-1.2c-12.5-13-23.6-3.3-26.8,0.1c-0.6,0.7-0.9,1.1-0.9,1.1
+							"></path>
+						<path id="leftEyeBottomLid" class="st3" d="M32.5,111.6c0,0,11.4,15.3,26.8-0.1"></path>
+						<circle id="leftEyeBall" class="st3" cx="45.7" cy="111.2" r="6.6"></circle>
+						<circle id="leftEyeBlack" cx="45.6" cy="110.9" r="3.8"></circle>
+						<circle id="leftEyeWhite" class="st4" cx="48" cy="110.9" r="2.5"></circle>
+						<path id="rightEyeTopLid" class="st3" d="M74.9,111.7c0.4-0.4,0.7-0.8,1.1-1.2c12.5-13,23.6-3.3,26.8,0.1c0.6,0.7,0.9,1.1,0.9,1.1"
+							></path>
+						<path id="rightEyeBottomLid" class="st3" d="M102.8,111.6c0,0-11.4,15.3-26.8-0.1"></path>
+						<circle id="rightEyeBall" class="st3" cx="89.6" cy="111.2" r="6.6"></circle>
+						<ellipse id="rightEyeBlack" transform="matrix(0.986 -0.1669 0.1669 0.986 -17.2592 16.5307)" cx="89.7" cy="110.9" rx="3.8" ry="3.8"></ellipse>
+						<circle id="rightEyeWhite" class="st4" cx="92.2" cy="110.9" r="2.5"></circle>
+						<path id="mouth" class="st5" d="M51.4,141.4c0,0,13.6,25.5,33.3,0H51.4z"></path>
+					</svg>	
+				</div>
+				<div class = "col-xs-12 introText">
+					<p>Oh hey! I'm Martha, a front-end web developer in Cincinnati, OH.</p>
+				</div>
+				<div class = "col-xs-12 introButtons">
+					<div class = "col-xs-4 introNav aboutMe">
+						<span>About Me</span>
+					</div>
+					<div class = "col-xs-4 introNav selectedWorks">
+						<span>Selected Works</span>
+					</div>
+					<div class = "col-xs-4 introNav contact">
+						<span>Contact</span>
+					</div>	
+				</div>	
+			</div>
+			<!-- ABOUT ME -->
+			<div class = "row rowAboutMe hide">
+				<div class = "col-xs-12">
+					<div class = "astroBox">
+						<div class = "me">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="me" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 135 175" style="enable-background:new 0 0 135 175;" xml:space="preserve">
+								<ellipse id="head" class="st0" cx="67.6" cy="99.4" rx="62.1" ry="69.7"></ellipse>
+								<path id="bun" class="st1" d="M39.3,37.3c0,0-1.6-32.6,28.3-32.1s28.3,32.1,28.3,32.1"></path>
+								<path id="bangs" class="st2" d="M126.1,117.2c-4.7-1.4-6.6-43.4-6.6-43.4l-15,19.8l-7.4-17.9L81.3,95.2l-6.3-20L62.8,91.1l-9.5-19.4
+									l-11,22.5L36,77.7l-9,16.8L15.2,74.1c0,0-5.7,42.2-6.6,43.1"></path>
+								<path id="leftEyeTopLid" class="st3" d="M60.4,111.8c-0.4-0.4-0.7-0.8-1.1-1.2c-12.5-13-23.6-3.3-26.8,0.1c-0.6,0.7-0.9,1.1-0.9,1.1
+									"></path>
+								<path id="leftEyeBottomLid" class="st3" d="M32.5,111.6c0,0,11.4,15.3,26.8-0.1"></path>
+								<circle id="leftEyeBall" class="st3" cx="45.7" cy="111.2" r="6.6"></circle>
+								<circle id="leftEyeBlack" cx="45.6" cy="110.9" r="3.8"></circle>
+								<circle id="leftEyeWhite" class="st4" cx="48" cy="110.9" r="2.5"></circle>
+								<path id="rightEyeTopLid" class="st3" d="M74.9,111.7c0.4-0.4,0.7-0.8,1.1-1.2c12.5-13,23.6-3.3,26.8,0.1c0.6,0.7,0.9,1.1,0.9,1.1"
+									></path>
+								<path id="rightEyeBottomLid" class="st3" d="M102.8,111.6c0,0-11.4,15.3-26.8-0.1"></path>
+								<circle id="rightEyeBall" class="st3" cx="89.6" cy="111.2" r="6.6"></circle>
+								<ellipse id="rightEyeBlack" transform="matrix(0.986 -0.1669 0.1669 0.986 -17.2592 16.5307)" cx="89.7" cy="110.9" rx="3.8" ry="3.8"></ellipse>
+								<circle id="rightEyeWhite" class="st4" cx="92.2" cy="110.9" r="2.5"></circle>
+								<path id="mouth" class="st5" d="M51.4,141.4c0,0,13.6,25.5,33.3,0H51.4z"></path>
+							</svg>	
+						</div>
+						<div class = "astronaut">
+							<?xml version="1.0" encoding="utf-8"?>
+							<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="astronaut" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 175 375" style="enable-background:new 0 0 175 375;" xml:space="preserve">
+
+								<circle class="st0" cx="88.6" cy="55.6" r="44"></circle>
+								<path class="st0" d="M21.5,101.5v-47c0,0-1.7-17.4,26.2-16.1"></path>
+								<path class="st0" d="M154.5,101.4V54.5c0,0,1.6-17.4-25.2-16"></path>
+								<line class="st0" x1="35.6" y1="39.4" x2="35.6" y2="7.5"></line>
+								<path class="st0" d="M50.8,79.2C2.7,101,7.5,146.5,7.5,146.5v67.9"></path>
+								<path class="st0" d="M168.9,214.4v-67.9c0,0,4.8-45.5-43.3-67.3"></path>
+								<polyline class="st0" points="44.6,148.6 44.6,330.6 44.6,333.2 "></polyline>
+								<path class="st0" d="M61.9,339.2c0,0-47.6-26.2-45,25.8l66.8,0.8v-98.3c0,0-0.7-5.5,5-5.5"></path>
+								<polyline class="st0" points="131.8,148.6 131.8,330.6 131.8,333.2 "></polyline>
+								<path class="st0" d="M114.6,339.2c0,0,47.6-26.2,45,25.8l-66.8,0.8v-98.3c0,0,0.7-5.5-5-5.5"></path>
+								<path class="st0" d="M131.9,214.5h36.8c0,0,1.9,22.3-18.4,22.4S131.9,214.5,131.9,214.5z"></path>
+								<path class="st0" d="M7.4,214.4h36.8c0,0,1.9,22.3-18.4,22.4C5.6,236.9,7.4,214.4,7.4,214.4z"></path>
+								<ellipse class="st0" cx="88.1" cy="57.1" rx="37" ry="32.5"></ellipse>
+								<path class="st0" d="M106.7,166.5H72c-7,0-12.7-5.7-12.7-12.7v-20.7c0-7,5.7-12.7,12.7-12.7h34.7c7,0,12.7,5.7,12.7,12.7v20.7
+									C119.5,160.8,113.8,166.5,106.7,166.5z"></path>
+								<polyline class="st0" points="166.7,128.2 153.3,128.2 153.3,139 166.7,139 "></polyline>
+							</svg>
+						</div>
+					</div>
+					<div class = "astroText">
+						<p class = "p1">Since I was a kid, I have loved space. 
+						The vastness of it alone blew my mind - so big that I couldn't write down it's size with all of the pencils. To tiny me, the universe was full of possibilites - that anything I could dream up might exist. It felt very cool that I was apart of it even though I knew I would never be able to fully understand it.</p>
+						<p class = "p2">Being an astronaut was never going to happen. I'm scared of heights, and the dark, and I have bad eyes. Luckily the internet holds the same inifite wonder! Plus I get to stay on the ground, my screen lights up, and it would almost be weird if a programmer didn't wear glasses.</p>
+						<p class = "p3">I sincerely love being apart of something so unknown and undefined. The internet in 20 years will be unrecognizable to us today. I am dedicated to learning as many new languages and technologies as possible so that I may have a tiny fraction of influence on what the internet will become.</p>
+					</div>		
+				</div>
+			</div>
+			<!-- SELECTED WORKS -->
+			<div class = "row rowSelectedWorks">
+				<div class = "col-xs-12">
+					<p>rowSelectedWorks</p>
+				</div>	
+			</div>
+			<!-- CONTACT -->
+			<div class = "row rowContact">
+				<div class = "col-xs-12">
+					<p>rowContact</p>
+				</div>	
+			</div>			
+		</div>
+
+		<script type="text/javascript" src = "/node_modules/waypoints/lib/jquery.waypoints.js"></script>
+		<script type="text/javascript" src = "js/main.js"></script>
+			
 	</body>
 </html>

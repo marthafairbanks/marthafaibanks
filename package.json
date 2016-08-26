@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-jslint": "^1.0.1",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.2",
+    "waypoints": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marthafairbanks/marthafairbanks"
+  },
+  "author": "Martha Fairbanks",
+  "license": "ISC",
+  "homepage": ""
+}

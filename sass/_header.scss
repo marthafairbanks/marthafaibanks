@@ -1,0 +1,22 @@
+.rowHeader {
+    padding-top: 15px;
+    .nav{
+        font-size: 20px;
+        ul {
+            text-align: right;
+            li {
+                text-decoration: none;
+                text-transform: lowercase;
+                display: inline-block;
+                .tinyCircle {
+                    border: 2px solid black;
+                    width: 7px;
+                    height: 7px;
+                    display: block;
+                    border-radius: 100px;
+                    margin-bottom: 2px;
+                }
+            }    
+        }
+    }
+}

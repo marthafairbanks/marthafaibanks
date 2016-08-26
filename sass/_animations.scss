@@ -1,0 +1,192 @@
+
+//SHRINK
+@-webkit-keyframes shrink {
+  0% {
+    width: 200px;
+  }
+  100% { 
+    width: 100px;
+  } 
+}
+@-moz-keyframes shrink {
+  0% {
+    width: 200px;
+  }
+  100% { 
+    width: 100px;
+  }  
+}
+@keyframes shrink {
+  0% {
+    width: 200px;
+  }
+  100% { 
+    width: 100px;
+  }  
+}
+
+// MOVE UP FACELESS ASTRONAUT
+@-webkit-keyframes moveUpAstro { 
+  from { 
+    margin-top: 0; 
+  }
+  to {
+    margin-top: -141px;
+  } 
+}
+@-moz-keyframes moveUpAstro { 
+  from { 
+    margin-top: 0; 
+  }
+  to {
+    margin-top: -141px;
+  } 
+}
+@keyframes moveUpAstro { 
+  from { 
+    margin-top: 0; 
+  }
+  to {
+    margin-top: -141px;
+  }
+}
+
+// MOVE OVER ASTRONAUT
+@-webkit-keyframes moveOverAstro { 
+  0% {
+    margin: 0px;
+  }
+  100% {
+    margin-left: -55%;
+    margin-top: -5%;
+  }
+}
+@-moz-keyframes moveOverAstro { 
+  0% {
+    margin: 0px;
+  }
+  100% {
+    margin-left: -55%;
+    margin-top: -5%;
+  }
+}
+@keyframes moveOverAstro { 
+  0% {
+    margin: 0px;
+  }
+  100% {
+    margin-left: -55%;
+    margin-top: -5%;
+  }
+}
+
+// TYPING ANIMATIONS
+@-webkit-keyframes type { 
+  from { 
+    width: 0; 
+  } 
+}
+@-moz-keyframes type { 
+  from { 
+    width: 0; 
+  } 
+}
+@keyframes type { 
+  from { 
+    width: 0; 
+  } 
+}
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% { 
+    width: 100;
+  } 
+}
+@-moz-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% { 
+    width: 100;
+  } 
+} 
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% { 
+    width: 100;
+  } 
+} 
+
+// BLINKING ANIMATION
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+// FADE IN/OUT ANIMATIONS
+@-webkit-keyframes fadeIn { 
+  from { 
+    opacity:0; 
+  } 
+  to { 
+    opacity:1; 
+  } 
+}
+@-moz-keyframes fadeIn {   
+  from { 
+    opacity:0; 
+  } 
+  to { 
+    opacity:1; 
+  } 
+}
+@keyframes fadeIn {   
+  from { 
+    opacity:0; 
+  } 
+  to { 
+    opacity:1; 
+  } 
+}
+
+@-webkit-keyframes fadeOut { 
+  from { 
+    opacity:1; 
+  } 
+  to { 
+    opacity:0; 
+  } 
+}
+@-moz-keyframes fadeOut {   
+  from { 
+    opacity:1; 
+  } 
+  to { 
+    opacity:0; 
+  } 
+}
+@keyframes fadeOut {   
+  from { 
+    opacity:1; 
+  } 
+  to { 
+    opacity:0; 
+  } 
+}
+
+
+
