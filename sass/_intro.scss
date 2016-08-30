@@ -1,6 +1,8 @@
 .rowIntro {
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    // height: 100%;
+    // width: 100%;
     .me {
         width: 200px;
         margin: 0px auto;
@@ -111,5 +113,38 @@
             animation-delay: 6s; 
         }                        
 
+    }
+    .arrowDown {
+        padding-top: 50px;
+        .arrow {
+            border-bottom: 4px solid black;
+            border-right: 4px solid black;
+            width: 35px;
+            height: 35px;
+            margin: 0px auto;
+            display: block;
+            
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+            opacity:0; 
+            -webkit-animation:fadeIn ease-in 1;  
+            -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+
+            -webkit-animation-delay: 7s;
+            -moz-animation-delay: 7s;
+            animation-delay: 7s; 
+
+        }
     }    
 }

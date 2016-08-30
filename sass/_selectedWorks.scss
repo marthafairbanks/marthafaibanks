@@ -1,0 +1,46 @@
+.rowSelectedWorks {
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;	
+	margin-top: 100px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	a {
+		// overflow: hidden;
+		color: black;
+		text-decoration: none;
+		&:hover {
+			color: black;
+			text-decoration: none;
+
+		}
+	}
+	.selectedWorksSlider {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		ul {
+			// overflow: hidden;
+			li {
+				img {
+					display: block;
+				}
+				.description {
+					a {
+						color: #337ab7;
+					}
+					.tech {
+						span {
+							padding:5px;
+							border-radius: 5px;
+							display: inline-block;
+							background-color: black;
+							color: white;
+							margin-right: 5px;
+						}
+					}
+
+				}	
+			}
+		}
+	}	
+}

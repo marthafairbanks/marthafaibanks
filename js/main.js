@@ -7,9 +7,6 @@
 // });
 
 
-
-
-
 $(document).ready(function() {
     $(".rowIntro").addClass("show");
 
@@ -17,5 +14,10 @@ $(document).ready(function() {
 	$(".aboutMe").click(function() {
 		$(".rowIntro").toggleClass("hide show");
 		$(".rowAboutMe").toggleClass("hide show");		
+	});
+
+	$('.selectedWorksSlider').unslider({ 
+		dots: true,
+        arrows: true, 
 	});
 });
