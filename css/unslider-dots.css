@@ -26,6 +26,7 @@
   text-indent: -999em;
   border: 2px solid;
   cursor: pointer;
+  margin-top: 15px;
 }
 .unslider-nav ol li.unslider-active {
   background: #000;
