@@ -1,14 +1,22 @@
 $mainFont: 'Rammetto One', cursive;
 
+@import "mixins";
 @import "animations";
 @import "header";
 @import "intro";
 @import "aboutMe";
+@import "robot";
 @import "selectedWorks";
+
+.rowContact {
+    height: 500px;
+    border: 2px solid red;
+}
 
 
 body {
     font-family: $mainFont;
+    color: black;
     //GRAPHPAPER
     background:
         linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),

@@ -1,3 +1,63 @@
+@-webkit-keyframes bump {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-0.5px); }
+  100% {
+    transform: translateY(0.5px); } }
+
+@-moz-keyframes bump {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-0.5px); }
+  100% {
+    transform: translateY(0.5px); } }
+
+@keyframes bump {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-0.5px); }
+  100% {
+    transform: translateY(0.5px); } }
+
+@-webkit-keyframes zap {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes zap {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes zap {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes gobot {
+  0% {
+    margin-left: 10px; }
+  100% {
+    margin-left: 120%; } }
+
+@-moz-keyframes gobot {
+  0% {
+    margin-left: 10px; }
+  100% {
+    margin-left: 120%; } }
+
+@keyframes gobot {
+  0% {
+    margin-left: 10px; }
+  100% {
+    margin-left: 110%; } }
+
 @-webkit-keyframes shrink {
   0% {
     width: 200px; }
@@ -137,6 +197,8 @@
     font-size: 20px; }
     .rowHeader .nav ul {
       text-align: right; }
+      .rowHeader .nav ul a {
+        color: black; }
       .rowHeader .nav ul li {
         text-decoration: none;
         text-transform: lowercase;
@@ -205,8 +267,6 @@
       width: 500px;
       width: 60ch;
       animation: type 5s steps(60, end); }
-      .rowIntro .introText p span {
-        animation: blink 1.25s infinite; }
     .rowIntro .introText p:nth-child(2) {
       white-space: nowrap;
       overflow: hidden;
@@ -230,46 +290,31 @@
       float: none; }
     .rowIntro .introButtons .aboutMe {
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 4.5s;
+      -moz-animation: 0.5s fadeIn ease-in 4.5s;
+      animation: 0.5s fadeIn ease-in 4.5s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 4.5s;
-      -moz-animation-delay: 4.5s;
-      animation-delay: 4.5s; }
+      animation-fill-mode: forwards; }
     .rowIntro .introButtons .selectedWorks {
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 5.25s;
+      -moz-animation: 0.5s fadeIn ease-in 5.25s;
+      animation: 0.5s fadeIn ease-in 5.25s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 5.25s;
-      -moz-animation-delay: 5.25s;
-      animation-delay: 5.25s; }
+      animation-fill-mode: forwards; }
+      .rowIntro .introButtons .selectedWorks a {
+        color: black;
+        text-decoration: none; }
     .rowIntro .introButtons .contact {
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 6s;
+      -moz-animation: 0.5s fadeIn ease-in 6s;
+      animation: 0.5s fadeIn ease-in 6s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 6s;
-      -moz-animation-delay: 6s;
-      animation-delay: 6s; }
+      animation-fill-mode: forwards; }
   .rowIntro .arrowDown {
     padding-top: 50px; }
     .rowIntro .arrowDown .arrow {
@@ -283,18 +328,12 @@
       -moz-transform: rotate(45deg);
       transform: rotate(45deg);
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 1s fadeIn ease-in 7s;
+      -moz-animation: 1s fadeIn ease-in 7s;
+      animation: 1s fadeIn ease-in 7s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: 1s;
-      -moz-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-delay: 7s;
-      -moz-animation-delay: 7s;
-      animation-delay: 7s; }
+      animation-fill-mode: forwards; }
 
 .rowAboutMe {
   margin-top: 70px;
@@ -395,56 +434,101 @@
     .rowAboutMe .astroText .p1 {
       border: 4px solid black;
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 7s;
+      -moz-animation: 0.5s fadeIn ease-in 7s;
+      animation: 0.5s fadeIn ease-in 7s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 7s;
-      -moz-animation-delay: 7s;
-      animation-delay: 7s; }
+      animation-fill-mode: forwards; }
     .rowAboutMe .astroText .p2 {
       border: 4px solid black;
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 18s;
+      -moz-animation: 0.5s fadeIn ease-in 18s;
+      animation: 0.5s fadeIn ease-in 18s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 18s;
-      -moz-animation-delay: 18s;
-      animation-delay: 18s; }
+      animation-fill-mode: forwards; }
     .rowAboutMe .astroText .p3 {
       border: 4px solid black;
       opacity: 0;
-      -webkit-animation: fadeIn ease-in 1;
-      -moz-animation: fadeIn ease-in 1;
-      animation: fadeIn ease-in 1;
+      -webkit-animation: 0.5s fadeIn ease-in 28s;
+      -moz-animation: 0.5s fadeIn ease-in 28s;
+      animation: 0.5s fadeIn ease-in 28s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-duration: .5s;
-      -moz-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-delay: 28s;
-      -moz-animation-delay: 28s;
-      animation-delay: 28s; }
+      animation-fill-mode: forwards; }
+
+.rowRobot {
+  padding-top: 100px; }
+  .rowRobot .worksTitle {
+    text-align: center;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    animation: fadeIn 4s; }
+    .rowRobot .worksTitle span {
+      font-size: 20px;
+      border: 4px solid black;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center; }
+  .rowRobot .robot {
+    width: 250px;
+    float: none; }
+    .rowRobot .robot .st0 {
+      fill: none;
+      stroke: #000000;
+      stroke-miterlimit: 10; }
+    .rowRobot .robot .st1 {
+      fill: none;
+      stroke: #EAD906;
+      stroke-miterlimit: 10; }
+    .rowRobot .robot #electric {
+      -webkit-animation: 0.75s zap infinite;
+      -moz-animation: 0.75s zap infinite;
+      animation: 0.75s zap infinite; }
+  .rowRobot .moveRobby {
+    -webkit-animation: 15s gobot 1.5s;
+    -moz-animation: 15s gobot 1.5s;
+    animation: 15s gobot 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+    .rowRobot .moveRobby #wheel1 {
+      -webkit-animation: bump 2s infinite 0.5s;
+      -moz-animation: bump 2s infinite 0.5s;
+      animation: bump 2s infinite 0.5s; }
+    .rowRobot .moveRobby #wheel2 {
+      -webkit-animation: bump 2s infinite 0.2s;
+      -moz-animation: bump 2s infinite 0.2s;
+      animation: bump 2s infinite 0.2s; }
+    .rowRobot .moveRobby #wheel3 {
+      -webkit-animation: bump 2s infinite 0.4s;
+      -moz-animation: bump 2s infinite 0.4s;
+      animation: bump 2s infinite 0.4s; }
+    .rowRobot .moveRobby #wheel4 {
+      -webkit-animation: bump 2s infinite 0.8s;
+      -moz-animation: bump 2s infinite 0.8s;
+      animation: bump 2s infinite 0.8s; }
+    .rowRobot .moveRobby #wheel5 {
+      -webkit-animation: bump 2s infinite 0.3s;
+      -moz-animation: bump 2s infinite 0.3s;
+      animation: bump 2s infinite 0.3s; }
+    .rowRobot .moveRobby #wheel6 {
+      -webkit-animation: bump 2s infinite 0.6s;
+      -moz-animation: bump 2s infinite 0.6s;
+      animation: bump 2s infinite 0.6s; }
 
 .rowSelectedWorks {
+  padding-top: 135px;
   font-size: 13px;
   margin: 0px auto;
   display: block;
-  margin-top: 200px;
   margin-bottom: 175px;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  animation: fadeIn 3s; }
   .rowSelectedWorks .unslider-arrow {
     color: black;
     text-decoration: none;
@@ -456,6 +540,7 @@
       color: black;
       text-decoration: none; }
   .rowSelectedWorks .selectedWorksSlider {
+    padding-top: 15px;
     width: 80%;
     margin: 0px auto;
     display: block;
@@ -463,6 +548,10 @@
     .rowSelectedWorks .selectedWorksSlider ul li img {
       display: block; }
     .rowSelectedWorks .selectedWorksSlider ul li .description {
+      border: 4px solid black;
+      border-right: 4px solid black;
+      padding-top: 10px;
+      margin-top: -10px;
       text-align: justify; }
       .rowSelectedWorks .selectedWorksSlider ul li .description .title {
         font-size: 15px;
@@ -477,16 +566,23 @@
         margin-bottom: 20px;
         float: right;
         display: block;
-        padding-left: 35px; }
+        padding-left: 10px; }
         .rowSelectedWorks .selectedWorksSlider ul li .tech li span {
           padding: 5px;
           border-radius: 5px;
           background-color: black;
           color: white;
           text-align: center; }
+    .rowSelectedWorks .selectedWorksSlider ul li .singleColumn li {
+      padding-left: 25px; }
+
+.rowContact {
+  height: 500px;
+  border: 2px solid red; }
 
 body {
   font-family: "Rammetto One", cursive;
+  color: black;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(-90deg, transparent 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px), linear-gradient(transparent 1px, transparent 1px), transparent;
   background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px, 10px 10px; }
   body .hide {

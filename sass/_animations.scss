@@ -1,3 +1,92 @@
+// BUMPY RIDE
+@-webkit-keyframes bump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-0.5px);
+  }
+  100% { 
+    transform: translateY(0.5px);
+  } 
+}
+@-moz-keyframes bump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-0.5px);
+  }
+  100% { 
+    transform: translateY(0.5px);
+  } 
+}
+
+@keyframes bump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-0.5px);
+  }
+  100% { 
+    transform: translateY(0.5px);
+  } 
+}
+
+// ITS ELECTRIC
+@-webkit-keyframes zap {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  } 
+}
+@-moz-keyframes zap {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  } 
+}
+@keyframes zap {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  } 
+}
+
+// ROBBY GO RIGHT
+@-webkit-keyframes gobot {
+  0% {
+    margin-left: 10px;
+  }
+  100% { 
+    margin-left: 120%;
+  } 
+}
+@-moz-keyframes gobot {
+  0% {
+    margin-left: 10px;
+  }
+  100% { 
+    margin-left: 120%;
+  } 
+}
+@keyframes gobot {
+  0% {
+    margin-left: 10px;
+  }
+  100% { 
+    margin-left: 110%;
+  } 
+}  
+
+
 
 //SHRINK
 @-webkit-keyframes shrink {

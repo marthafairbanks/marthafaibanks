@@ -1,0 +1,38 @@
+	.circleAnimation {
+		.circle {
+			margin: 0 auto;
+			width: 200px;
+			height: 200px;
+			border: 4px solid black;
+			border-radius: 50%;
+			position: absolute;
+			top: 140%;
+			left: 50%;
+			}
+		.one {
+		  animation: circle 4s infinite linear;
+		}
+		.two {
+		  animation: circle 3s infinite linear;
+		}
+		.three {
+		  animation: circle 2s infinite linear;
+		}
+			}
+
+
+				<div class = "circleAnimation">
+					<div class = "circle one"></div>
+					<div class = "circle two"></div>
+					<div class = "circle three"></div>								
+				</div>			
+
+//CIRCLES
+@keyframes circle {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(6)
+  }
+}				

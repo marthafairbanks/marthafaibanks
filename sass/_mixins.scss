@@ -1,0 +1,11 @@
+@mixin forward {
+	-webkit-animation-fill-mode:forwards;  
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+@mixin bumpAnimation($delay) { 
+	-webkit-animation:bump 2s infinite $delay;  
+	-moz-animation:bump 2s infinite $delay;
+	animation:bump 2s infinite $delay;
+}

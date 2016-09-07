@@ -1,0 +1,64 @@
+
+.rowRobot {
+	padding-top: 100px;
+	.worksTitle {
+		text-align: center;
+		-webkit-animation:fadeIn 4s;  
+		-moz-animation:fadeIn 4s;
+		animation:fadeIn 4s;
+		span {
+			font-size: 20px;
+			border: 4px solid black;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+		}	
+	}	
+	.robot {
+        width: 250px;
+        float: none;
+		.st0 {
+			fill:none;
+			stroke:#000000;
+			stroke-miterlimit:10;
+		}
+		.st1 {
+			fill:none;
+			stroke:#EAD906;
+			stroke-miterlimit:10;
+		}
+
+		#electric {
+			-webkit-animation:0.75s zap infinite;  
+		 	-moz-animation:0.75s zap infinite;
+		 	animation:0.75s zap infinite;
+		}									 
+	}
+	.moveRobby {	
+		-webkit-animation: 15s gobot 1.5s;  
+	 	-moz-animation:15s gobot 1.5s;
+	 	animation:15s gobot 1.5s;
+	 	@include forward;
+	 	#wheel1 {
+			@include bumpAnimation (0.5s);
+		}
+		#wheel2 {
+			@include bumpAnimation (0.2s);
+		}
+		#wheel3 {
+			@include bumpAnimation (0.4s);
+		}
+		#wheel4 {
+			@include bumpAnimation (0.8s);
+		}
+		#wheel5 {
+			@include bumpAnimation (0.3s);
+		}
+		#wheel6 {
+			@include bumpAnimation (0.6s);
+		}
+	} 	
+
+		
+
+}	
