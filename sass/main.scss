@@ -7,11 +7,7 @@ $mainFont: 'Rammetto One', cursive;
 @import "aboutMe";
 @import "robot";
 @import "selectedWorks";
-
-.rowContact {
-    height: 500px;
-    border: 2px solid red;
-}
+@import "contact";
 
 
 body {

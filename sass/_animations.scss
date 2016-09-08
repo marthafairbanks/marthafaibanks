@@ -1,3 +1,32 @@
+
+@keyframes flyX {
+  0% {
+    transform: translateX(36);
+  }
+  50% {
+    transform: translateX(614);  
+  }
+  100% { 
+    transform: translateX(725);   
+  } 
+}
+
+@keyframes flyY {
+  0% {
+    transform: translateY(1564);
+  }
+  50% {
+    transform: translateY(1579);    
+  }
+  100% { 
+    transform: translateY(1665);    
+  } 
+}
+
+
+
+
+
 // BUMPY RIDE
 @-webkit-keyframes bump {
   0% {

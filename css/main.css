@@ -1,3 +1,19 @@
+@keyframes flyX {
+  0% {
+    transform: translateX(36); }
+  50% {
+    transform: translateX(614); }
+  100% {
+    transform: translateX(725); } }
+
+@keyframes flyY {
+  0% {
+    transform: translateY(1564); }
+  50% {
+    transform: translateY(1579); }
+  100% {
+    transform: translateY(1665); } }
+
 @-webkit-keyframes bump {
   0% {
     transform: translateY(0px); }
@@ -526,9 +542,9 @@
   display: block;
   margin-bottom: 175px;
   overflow: hidden !important;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  animation: fadeIn 3s; }
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+  animation: fadeIn 4s; }
   .rowSelectedWorks .unslider-arrow {
     color: black;
     text-decoration: none;
@@ -577,8 +593,60 @@
       padding-left: 25px; }
 
 .rowContact {
-  height: 500px;
-  border: 2px solid red; }
+  margin-bottom: 200px; }
+  .rowContact .contactTitle {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 40px; }
+    .rowContact .contactTitle span {
+      border: 4px solid black;
+      padding-left: 10px;
+      padding-right: 10px; }
+  .rowContact .airplane .st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10; }
+  .rowContact .airplane .st1 {
+    fill: #FC4F13; }
+  .rowContact .airplane .st2 {
+    fill: #FC4F13;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10; }
+  .rowContact .contactBox {
+    font-size: 15px; }
+    .rowContact .contactBox .icon {
+      border: 3px solid black;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px; }
+      .rowContact .contactBox .icon i {
+        text-align: center;
+        font-size: 23px;
+        margin: 0px auto;
+        display: block;
+        margin-top: 5px; }
+      .rowContact .contactBox .icon .fa-envelope-o {
+        font-weight: bold; }
+    .rowContact .contactBox span {
+      float: left;
+      margin-left: 55px;
+      margin-top: -30px; }
+    .rowContact .contactBox .phone {
+      margin-top: -14%;
+      margin-left: 2%; }
+    .rowContact .contactBox .email {
+      margin-top: -20%;
+      margin-left: 48%; }
+    .rowContact .contactBox .github {
+      margin-top: -7%;
+      margin-left: 57%; }
+    .rowContact .contactBox .twitter {
+      margin-top: -5%;
+      margin-left: 4%; }
 
 body {
   font-family: "Rammetto One", cursive;

@@ -21,23 +21,22 @@ $(document).ready(function() {
     infinite: true,
 	});
 
-	function hideShow() {
+	function hideRobShowWork() {
     	$(".rowRobot").addClass("hide");
     	$(".rowSelectedWorks").addClass("show");
-    }
+    } 
 
 	var waypoint = new Waypoint ({
   		element: document.getElementsByClassName('rowRobot'),
   		handler: function(direction) {
   			if (direction !=='up') {
-    			console.log('Scrolled to waypoint 25%?!');
     			$(".robot").addClass("moveRobby");
     			$(".arrow").addClass("hide");
     			$(".worksTitle").addClass("show");
-    			setTimeout(hideShow, 10000); 
-
+    			setTimeout(hideRobShowWork, 10000); 
   			}
   		},
   		offset: '30%', 
 	});
+
 });

@@ -1,0 +1,60 @@
+.rowContact {
+	margin-bottom: 200px;
+	.contactTitle {
+		text-align: center;
+		font-size: 20px;
+		padding-bottom: 40px;
+		span {
+			border: 4px solid black;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.airplane {
+		.st0{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+		.st1{fill:#FC4F13;}
+		.st2{fill:#FC4F13;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+	}
+	.contactBox {
+		font-size: 15px;
+		.icon {
+			border: 3px solid black;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px; 
+			i {
+				text-align: center;
+				font-size: 23px;
+				margin: 0px auto;
+				display: block;
+				margin-top: 5px;
+
+			}
+			.fa-envelope-o{
+				font-weight: bold;
+			}
+		}
+		span {
+			float: left;
+			margin-left: 55px;
+			margin-top: -30px;
+		}
+		.phone {
+			margin-top: -14%;
+			margin-left: 2%;
+		}
+		.email {
+			margin-top: -20%;
+			margin-left: 48%;
+		}
+		.github {
+			margin-top: -7%;
+			margin-left: 57%;
+		}
+		.twitter {
+			margin-top: -5%;
+			margin-left: 4%;
+		}			
+	}
+}
