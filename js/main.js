@@ -31,12 +31,28 @@ $(document).ready(function() {
   		handler: function(direction) {
   			if (direction !=='up') {
     			$(".robot").addClass("moveRobby");
-    			$(".arrow").addClass("hide");
+    			$(".arrow").addClass("invisible");
     			$(".worksTitle").addClass("show");
     			setTimeout(hideRobShowWork, 10000); 
   			}
   		},
   		offset: '30%', 
 	});
+
+  
+  var waypoint2 = new Waypoint ({
+      element: document.getElementsByClassName('rowContact'),
+      handler: function(direction) {
+        if (direction !=='up') {
+          $(".contactBox").addClass("appear"); 
+          setTimeout(function(){
+            jQuery('#dash10').addClass('invisible');
+            jQuery('#dash11').addClass('invisible');
+          }, 2500)
+
+        }
+      },
+      offset: '30%', 
+  });  
 
 });

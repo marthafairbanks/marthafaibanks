@@ -1,19 +1,3 @@
-@keyframes flyX {
-  0% {
-    transform: translateX(36); }
-  50% {
-    transform: translateX(614); }
-  100% {
-    transform: translateX(725); } }
-
-@keyframes flyY {
-  0% {
-    transform: translateY(1564); }
-  50% {
-    transform: translateY(1579); }
-  100% {
-    transform: translateY(1665); } }
-
 @-webkit-keyframes bump {
   0% {
     transform: translateY(0px); }
@@ -213,8 +197,6 @@
     font-size: 20px; }
     .rowHeader .nav ul {
       text-align: right; }
-      .rowHeader .nav ul a {
-        color: black; }
       .rowHeader .nav ul li {
         text-decoration: none;
         text-transform: lowercase;
@@ -283,12 +265,6 @@
       width: 500px;
       width: 60ch;
       animation: type 5s steps(60, end); }
-    .rowIntro .introText p:nth-child(2) {
-      white-space: nowrap;
-      overflow: hidden;
-      width: 500px;
-      width: 50ch;
-      animation: type2 8s steps(60, end); }
   .rowIntro .introButtons {
     margin: 0px auto;
     display: block;
@@ -320,9 +296,6 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-      .rowIntro .introButtons .selectedWorks a {
-        color: black;
-        text-decoration: none; }
     .rowIntro .introButtons .contact {
       opacity: 0;
       -webkit-animation: 0.5s fadeIn ease-in 6s;
@@ -355,23 +328,20 @@
   margin-top: 70px;
   padding-bottom: 50px; }
   .rowAboutMe .astroBox {
-    -webkit-animation: moveOverAstro ease-in 3s;
-    -moz-animation: moveOverAstro ease-in 3s;
-    animation: moveOverAstro ease-in 3s;
+    -webkit-animation: 3s moveOverAstro ease-in 5s;
+    -moz-animation: 3s moveOverAstro ease-in 5s;
+    animation: 3s moveOverAstro ease-in 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 5s;
-    -moz-animation-delay: 5s;
-    animation-delay: 5s; }
+    animation-fill-mode: forwards; }
     .rowAboutMe .astroBox .me {
       width: 200px;
       margin: 0px auto;
       display: block;
       float: none;
-      -webkit-animation: shrink ease-in 5s;
-      -moz-animation: shrink ease-in 5s;
-      animation: shrink ease-in 5s;
+      -webkit-animation: 5s shrink ease-in 0s;
+      -moz-animation: 5s shrink ease-in 0s;
+      animation: 5s shrink ease-in 0s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
@@ -386,9 +356,9 @@
         stroke-width: 4;
         stroke-linecap: round;
         stroke-miterlimit: 10;
-        -webkit-animation: fadeOut 5s;
-        -moz-animation: fadeOut 5s;
-        animation: fadeOut 5s;
+        -webkit-animation: 5s fadeOut ease-in 0s;
+        -moz-animation: 5s fadeOut ease-in 0s;
+        animation: 5s fadeOut ease-in 0s;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
@@ -419,9 +389,9 @@
       margin: 0px auto;
       display: block;
       float: none;
-      -webkit-animation: moveUpAstro ease-in 4s;
-      -moz-animation: moveUpAstro ease-in 4s;
-      animation: moveUpAstro ease-in 4s;
+      -webkit-animation: 4s moveUpAstro ease-in 0s;
+      -moz-animation: 4s moveUpAstro ease-in 0s;
+      animation: 4s moveUpAstro ease-in 0s;
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
@@ -433,9 +403,9 @@
         stroke-linejoin: round;
         stroke-miterlimit: 10;
         opacity: 0;
-        -webkit-animation: fadeIn ease-in 6s;
-        -moz-animation: fadeIn ease-in 6s;
-        animation: fadeIn ease-in 6s;
+        -webkit-animation: 5s fadeIn ease-in 0s;
+        -moz-animation: 5s fadeIn ease-in 0s;
+        animation: 5s fadeIn ease-in 0s;
         -webkit-animation-fill-mode: forwards;
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
@@ -475,19 +445,19 @@
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
 
+.worksTitle {
+  padding-top: 50px;
+  text-align: center; }
+  .worksTitle span {
+    font-size: 20px;
+    border: 4px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; }
+
 .rowRobot {
-  padding-top: 100px; }
-  .rowRobot .worksTitle {
-    text-align: center;
-    -webkit-animation: fadeIn 4s;
-    -moz-animation: fadeIn 4s;
-    animation: fadeIn 4s; }
-    .rowRobot .worksTitle span {
-      font-size: 20px;
-      border: 4px solid black;
-      padding-left: 10px;
-      padding-right: 10px;
-      text-align: center; }
+  padding-top: 100px;
+  margin-bottom: 94px; }
   .rowRobot .robot {
     width: 250px;
     float: none; }
@@ -536,25 +506,20 @@
       animation: bump 2s infinite 0.6s; }
 
 .rowSelectedWorks {
-  padding-top: 135px;
+  padding-top: 75px;
   font-size: 13px;
   margin: 0px auto;
   display: block;
-  margin-bottom: 175px;
+  margin-bottom: 150px;
   overflow: hidden !important;
-  -webkit-animation: fadeIn 4s;
-  -moz-animation: fadeIn 4s;
-  animation: fadeIn 4s; }
+  -webkit-animation: 4s fadeIn ease-in 0s;
+  -moz-animation: 4s fadeIn ease-in 0s;
+  animation: 4s fadeIn ease-in 0s; }
   .rowSelectedWorks .unslider-arrow {
-    color: black;
-    text-decoration: none;
     padding: 5px;
     border: 4px solid black;
     margin-right: 10%;
     margin-left: 10%; }
-    .rowSelectedWorks .unslider-arrow:hover {
-      color: black;
-      text-decoration: none; }
   .rowSelectedWorks .selectedWorksSlider {
     padding-top: 15px;
     width: 80%;
@@ -576,6 +541,8 @@
         padding-top: 15px; }
         .rowSelectedWorks .selectedWorksSlider ul li .description .links a {
           color: #337ab7 !important; }
+          .rowSelectedWorks .selectedWorksSlider ul li .description .links a:hover {
+            color: #22527b !important; }
     .rowSelectedWorks .selectedWorksSlider ul li .tech {
       padding-top: 10px; }
       .rowSelectedWorks .selectedWorksSlider ul li .tech li {
@@ -593,7 +560,7 @@
       padding-left: 25px; }
 
 .rowContact {
-  margin-bottom: 200px; }
+  margin-bottom: 150px; }
   .rowContact .contactTitle {
     text-align: center;
     font-size: 20px;
@@ -602,51 +569,42 @@
       border: 4px solid black;
       padding-left: 10px;
       padding-right: 10px; }
-  .rowContact .airplane .st0 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 3;
-    stroke-miterlimit: 10; }
-  .rowContact .airplane .st1 {
-    fill: #FC4F13; }
-  .rowContact .airplane .st2 {
-    fill: #FC4F13;
-    stroke: #000000;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10; }
+  .rowContact .airplane {
+    margin-left: 1%; }
+    .rowContact .airplane .st0 {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 3;
+      stroke-miterlimit: 10; }
+    .rowContact .airplane .st1 {
+      fill: #FC4F13; }
+    .rowContact .airplane .st2 {
+      fill: #FC4F13;
+      stroke: #000000;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10; }
+  .rowContact .appear {
+    -webkit-animation: 1s fadeIn ease-in 2s;
+    -moz-animation: 1s fadeIn ease-in 2s;
+    animation: 1s fadeIn ease-in 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
   .rowContact .contactBox {
-    font-size: 15px; }
-    .rowContact .contactBox .icon {
-      border: 3px solid black;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px; }
-      .rowContact .contactBox .icon i {
-        text-align: center;
-        font-size: 23px;
-        margin: 0px auto;
-        display: block;
-        margin-top: 5px; }
-      .rowContact .contactBox .icon .fa-envelope-o {
-        font-weight: bold; }
-    .rowContact .contactBox span {
-      float: left;
-      margin-left: 55px;
-      margin-top: -30px; }
-    .rowContact .contactBox .phone {
-      margin-top: -14%;
-      margin-left: 2%; }
-    .rowContact .contactBox .email {
-      margin-top: -20%;
-      margin-left: 48%; }
-    .rowContact .contactBox .github {
-      margin-top: -7%;
-      margin-left: 57%; }
-    .rowContact .contactBox .twitter {
-      margin-top: -5%;
-      margin-left: 4%; }
+    opacity: 0;
+    text-align: center;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 100px;
+    font-size: 16px; }
+    .rowContact .contactBox ul {
+      float: none;
+      list-style-type: none;
+      padding-left: 0px; }
+      .rowContact .contactBox ul li {
+        padding-bottom: 10px; }
 
 body {
   font-family: "Rammetto One", cursive;
@@ -657,3 +615,14 @@ body {
     display: none; }
   body .show {
     display: block; }
+  body .invisible {
+    opacity: 0; }
+  body a {
+    color: black;
+    text-decoration: none; }
+    body a:hover {
+      color: black;
+      text-decoration: none; }
+    body a:focus {
+      color: black;
+      text-decoration: none; }

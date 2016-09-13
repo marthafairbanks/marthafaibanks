@@ -29,13 +29,6 @@
             width: 60ch;
             animation: type 5s steps(60, end);
         }
-        p:nth-child(2) {
-            white-space: nowrap;
-            overflow: hidden;
-            width: 500px;
-            width: 50ch;
-            animation: type2 8s steps(60, end);
-        }
     }
     .introButtons {
         margin: 0px auto;
@@ -56,32 +49,22 @@
         }
         .aboutMe {
             opacity:0; 
-            -webkit-animation:0.5s fadeIn ease-in 4.5s;  
-            -moz-animation:0.5s fadeIn ease-in 4.5s;
-            animation:0.5s fadeIn ease-in 4.5s;
-
+            
+            @include animationMix (0.5s, fadeIn, 4.5s);
             @include forward;
         }
 
         .selectedWorks {
             opacity:0; 
-            -webkit-animation:0.5s fadeIn ease-in 5.25s;  
-            -moz-animation:0.5s fadeIn ease-in 5.25s;
-            animation:0.5s fadeIn ease-in 5.25s;
 
+            @include animationMix (0.5s, fadeIn,  5.25s);
             @include forward; 
-            a {
-                color: black;
-                text-decoration: none;
-            }
         }
 
         .contact {
             opacity:0; 
-            -webkit-animation:0.5s fadeIn ease-in 6s;  
-            -moz-animation:0.5s fadeIn ease-in 6s;
-            animation:0.5s fadeIn ease-in 6s;
 
+            @include animationMix (0.5s, fadeIn, 6s);
             @include forward;
         }                        
 
@@ -101,10 +84,8 @@
             transform: rotate(45deg);
 
             opacity:0; 
-            -webkit-animation: 1s fadeIn ease-in 7s;  
-            -moz-animation: 1s fadeIn ease-in 7s;
-            animation: 1s fadeIn ease-in 7s;
 
+            @include animationMix (1s, fadeIn, 7s);
             @include forward;
         }
     }    

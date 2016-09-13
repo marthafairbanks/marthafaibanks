@@ -38,4 +38,20 @@ body {
     .show {
         display: block;
     }
+    .invisible {
+        opacity: 0;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+        &:focus {
+            color: black;
+            text-decoration: none;
+
+        }
+    }
 }
