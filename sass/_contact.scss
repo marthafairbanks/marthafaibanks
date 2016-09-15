@@ -1,5 +1,5 @@
 .rowContact {
-	margin-bottom: 150px;
+	margin-bottom: 190px;
 	.contactTitle {
 		text-align: center;
 		font-size: 20px;
@@ -17,10 +17,6 @@
 		.st2{fill:#FC4F13;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 	}
-	.appear {
-		@include animationMix (1s, fadeIn, 2s);
-		@include forward;
-	}
 	.contactBox {
 		opacity: 0;
 		text-align: center;
@@ -34,6 +30,16 @@
 			padding-left: 0px;		
 			li {
 				padding-bottom: 10px;
+				a {
+					&:hover {
+						color: #FC4F13 !important;
+						-webkit-transition: color .5s ease;
+						-moz-transition: color .5s ease;
+						-ms-transition: color .5s ease;
+						-o-transition: color .5s ease;
+						transition: color .5s ease;	
+					}
+				}
 
 			}
 		}

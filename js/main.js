@@ -26,12 +26,13 @@ $(document).ready(function() {
     	$(".rowSelectedWorks").addClass("show");
     } 
 
-	var waypoint = new Waypoint ({
+	var selectedWorks = new Waypoint ({
   		element: document.getElementsByClassName('rowRobot'),
   		handler: function(direction) {
   			if (direction !=='up') {
     			$(".robot").addClass("moveRobby");
-    			$(".arrow").addClass("invisible");
+    			$(".arrowDownIntro").addClass("invisible");
+          $(".arrowDownAboutMe").addClass("invisible");
     			$(".worksTitle").addClass("show");
     			setTimeout(hideRobShowWork, 10000); 
   			}
@@ -40,19 +41,36 @@ $(document).ready(function() {
 	});
 
   
-  var waypoint2 = new Waypoint ({
+  var contact = new Waypoint ({
       element: document.getElementsByClassName('rowContact'),
       handler: function(direction) {
         if (direction !=='up') {
-          $(".contactBox").addClass("appear"); 
+          $(".contactBox").addClass("visible");
+          $(".arrowDownSelectedWorks").addClass("invisible");
           setTimeout(function(){
-            jQuery('#dash10').addClass('invisible');
-            jQuery('#dash11').addClass('invisible');
-          }, 2500)
+            $('#dash10').addClass('invisible');
+            $('#dash11').addClass('invisible');
+          }, 1250);
 
         }
       },
       offset: '30%', 
-  });  
+  });
+
+  var top = new Waypoint ({
+      element: document.getElementsByClassName('rowHeader'),
+      handler: function(direction) {
+        if (direction == 'up') {
+          $(".arrowDownIntro").removeClass("invisible");
+          $(".arrowDownAboutMe").removeClass("invisible");
+          $(".arrowDownSelectedWorks").removeClass("invisible");
+          $(".contactBox").removeClass("visible");
+          $('#dash10').removeClass('invisible');
+          $('#dash11').removeClass('invisible');   
+
+        }
+      },
+      offset: '-2%', 
+  });    
 
 });

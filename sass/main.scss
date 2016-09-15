@@ -32,6 +32,7 @@ body {
         10px 10px,
         10px 10px,
         10px 10px;
+    
     .hide {
         display: none;
     }
@@ -39,7 +40,12 @@ body {
         display: block;
     }
     .invisible {
-        opacity: 0;
+        @include animationMix (1s, fadeOut, 1s);
+        @include forward;
+    }
+    .visible {
+        @include animationMix (1s, fadeIn, 1s);
+        @include forward;
     }
     a {
         color: black;

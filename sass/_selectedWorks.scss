@@ -3,8 +3,7 @@
 	font-size: 13px;
 	margin: 0px auto;
 	display: block;
-	margin-bottom: 150px;
-	overflow: hidden !important;
+	margin-bottom: 50px;
 
 	@include animationMix (4s, fadeIn, 0s);
 
@@ -41,6 +40,11 @@
 							color: #337ab7 !important;
 							&:hover{
 								color: darken(#337ab7, 15) !important;
+								-webkit-transition: color .5s ease;
+								-moz-transition: color .5s ease;
+								-ms-transition: color .5s ease;
+								-o-transition: color .5s ease;
+								transition: color .5s ease;									
 							}
 						}
 					}
@@ -68,5 +72,25 @@
 				}
 			}
 		}
-	}	
+	}
+	.arrowDownSelectedWorks {
+        padding-top: 65px;
+        .arrow {
+            border-bottom: 4px solid black;
+            border-right: 4px solid black;
+            width: 35px;
+            height: 35px;
+            margin: 0px auto;
+            display: block;
+            
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+            opacity:0; 
+
+            @include animationMix (1s, fadeIn, 7s);
+            @include forward;
+        }
+    }		
 }

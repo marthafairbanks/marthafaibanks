@@ -304,9 +304,9 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-  .rowIntro .arrowDown {
+  .rowIntro .arrowDownIntro {
     padding-top: 50px; }
-    .rowIntro .arrowDown .arrow {
+    .rowIntro .arrowDownIntro .arrow {
       border-bottom: 4px solid black;
       border-right: 4px solid black;
       width: 35px;
@@ -444,6 +444,25 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
+  .rowAboutMe .arrowDownAboutMe {
+    margin-top: -20px; }
+    .rowAboutMe .arrowDownAboutMe .arrow {
+      border-bottom: 4px solid black;
+      border-right: 4px solid black;
+      width: 35px;
+      height: 35px;
+      margin: 0px auto;
+      display: block;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      opacity: 0;
+      -webkit-animation: 1s fadeIn ease-in 30s;
+      -moz-animation: 1s fadeIn ease-in 30s;
+      animation: 1s fadeIn ease-in 30s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
 
 .worksTitle {
   padding-top: 50px;
@@ -510,8 +529,7 @@
   font-size: 13px;
   margin: 0px auto;
   display: block;
-  margin-bottom: 150px;
-  overflow: hidden !important;
+  margin-bottom: 50px;
   -webkit-animation: 4s fadeIn ease-in 0s;
   -moz-animation: 4s fadeIn ease-in 0s;
   animation: 4s fadeIn ease-in 0s; }
@@ -542,7 +560,12 @@
         .rowSelectedWorks .selectedWorksSlider ul li .description .links a {
           color: #337ab7 !important; }
           .rowSelectedWorks .selectedWorksSlider ul li .description .links a:hover {
-            color: #22527b !important; }
+            color: #22527b !important;
+            -webkit-transition: color .5s ease;
+            -moz-transition: color .5s ease;
+            -ms-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease; }
     .rowSelectedWorks .selectedWorksSlider ul li .tech {
       padding-top: 10px; }
       .rowSelectedWorks .selectedWorksSlider ul li .tech li {
@@ -558,9 +581,28 @@
           text-align: center; }
     .rowSelectedWorks .selectedWorksSlider ul li .singleColumn li {
       padding-left: 25px; }
+  .rowSelectedWorks .arrowDownSelectedWorks {
+    padding-top: 65px; }
+    .rowSelectedWorks .arrowDownSelectedWorks .arrow {
+      border-bottom: 4px solid black;
+      border-right: 4px solid black;
+      width: 35px;
+      height: 35px;
+      margin: 0px auto;
+      display: block;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      opacity: 0;
+      -webkit-animation: 1s fadeIn ease-in 7s;
+      -moz-animation: 1s fadeIn ease-in 7s;
+      animation: 1s fadeIn ease-in 7s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
 
 .rowContact {
-  margin-bottom: 150px; }
+  margin-bottom: 190px; }
   .rowContact .contactTitle {
     text-align: center;
     font-size: 20px;
@@ -585,13 +627,6 @@
       stroke-linecap: round;
       stroke-linejoin: round;
       stroke-miterlimit: 10; }
-  .rowContact .appear {
-    -webkit-animation: 1s fadeIn ease-in 2s;
-    -moz-animation: 1s fadeIn ease-in 2s;
-    animation: 1s fadeIn ease-in 2s;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
   .rowContact .contactBox {
     opacity: 0;
     text-align: center;
@@ -605,6 +640,13 @@
       padding-left: 0px; }
       .rowContact .contactBox ul li {
         padding-bottom: 10px; }
+        .rowContact .contactBox ul li a:hover {
+          color: #FC4F13 !important;
+          -webkit-transition: color .5s ease;
+          -moz-transition: color .5s ease;
+          -ms-transition: color .5s ease;
+          -o-transition: color .5s ease;
+          transition: color .5s ease; }
 
 body {
   font-family: "Rammetto One", cursive;
@@ -616,7 +658,19 @@ body {
   body .show {
     display: block; }
   body .invisible {
-    opacity: 0; }
+    -webkit-animation: 1s fadeOut ease-in 1s;
+    -moz-animation: 1s fadeOut ease-in 1s;
+    animation: 1s fadeOut ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  body .visible {
+    -webkit-animation: 1s fadeIn ease-in 1s;
+    -moz-animation: 1s fadeIn ease-in 1s;
+    animation: 1s fadeIn ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
   body a {
     color: black;
     text-decoration: none; }

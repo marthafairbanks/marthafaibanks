@@ -79,5 +79,25 @@
 	 		@include animationMix (0.5s, fadeIn, 28s);
 	 		@include forward;			
 		}
-	}    
+	}
+    .arrowDownAboutMe {
+        margin-top: -20px;
+        .arrow {
+            border-bottom: 4px solid black;
+            border-right: 4px solid black;
+            width: 35px;
+            height: 35px;
+            margin: 0px auto;
+            display: block;
+            
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+            opacity:0; 
+
+            @include animationMix (1s, fadeIn, 30s);
+            @include forward;
+        }
+    }	    
 }
