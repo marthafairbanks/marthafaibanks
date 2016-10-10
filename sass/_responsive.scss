@@ -14,14 +14,6 @@
                     font-size: 15px;
                     padding-top: 5px;
                     list-style-type: none;
-                    &:hover {
-                        color: #FC4F13 !important;
-                        -webkit-transition: color .5s ease;
-                        -moz-transition: color .5s ease;
-                        -ms-transition: color .5s ease;
-                        -o-transition: color .5s ease;
-                        transition: color .5s ease; 
-                    }
                 }   
             }                
         }
@@ -56,14 +48,6 @@
                         text-transform: lowercase;
                         display: inline-block;
                         cursor: pointer;
-                        &:hover {
-                            color: #FC4F13 !important;
-                            -webkit-transition: color .5s ease;
-                            -moz-transition: color .5s ease;
-                            -ms-transition: color .5s ease;
-                            -o-transition: color .5s ease;
-                            transition: color .5s ease; 
-                        }
                         .tinyCircle {
                             border: 2px solid black;
                             width: 7px;
@@ -74,7 +58,28 @@
                         }
                     }    
                 }
-            }      
+            }
+            .arrowDownIntroMobile {
+                padding-top: 20px;
+                .arrow {
+                    border-bottom: 4px solid black;
+                    border-right: 4px solid black;
+                    width: 35px;
+                    height: 35px;
+                    margin: 0px auto;
+                    display: block;
+                    
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    transform: rotate(45deg);
+
+                    opacity:0; 
+
+                    @include animationMix (1s, fadeIn, 5s);
+                    @include forward;
+                }
+            }
+
         }
     }                
 }
@@ -143,8 +148,24 @@
                 }
             }
             .arrowDownAboutMeMobile {
-                display: block;
-                margin-top: 40px;
+                padding-top: 325px;
+                .arrow {
+                    border-bottom: 4px solid black;
+                    border-right: 4px solid black;
+                    width: 35px;
+                    height: 35px;
+                    margin: 0px auto;
+                    display: block;
+                    
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    transform: rotate(45deg);
+
+                    opacity:0; 
+
+                    @include animationMix (1s, fadeIn, 52s);
+                    @include forward;
+                }
             }
         }    
     }
@@ -218,7 +239,26 @@
                     }
                 }   
             }            
-        }    
+        }
+        .arrowDownWorksMobile {
+            padding-top: 50px;
+            .arrow {
+                border-bottom: 4px solid black;
+                border-right: 4px solid black;
+                width: 35px;
+                height: 35px;
+                margin: 0px auto;
+                display: block;
+                    
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform: rotate(45deg);
+
+                opacity:0; 
+                @include animationMix (1s, fadeIn, 7s);
+                @include forward;
+            }
+        }            
     }        
 }
 

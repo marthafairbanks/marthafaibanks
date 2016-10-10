@@ -711,13 +711,6 @@
         font-size: 15px;
         padding-top: 5px;
         list-style-type: none; }
-        .rowHeader .burger .burgerDrop li:hover {
-          color: #FC4F13 !important;
-          -webkit-transition: color .5s ease;
-          -moz-transition: color .5s ease;
-          -ms-transition: color .5s ease;
-          -o-transition: color .5s ease;
-          transition: color .5s ease; }
     .rowHeader .nav {
       display: none; }
   .rowIntro .regIntro {
@@ -743,20 +736,32 @@
           text-transform: lowercase;
           display: inline-block;
           cursor: pointer; }
-          .rowIntro .mobileIntro .nav ul li:hover {
-            color: #FC4F13 !important;
-            -webkit-transition: color .5s ease;
-            -moz-transition: color .5s ease;
-            -ms-transition: color .5s ease;
-            -o-transition: color .5s ease;
-            transition: color .5s ease; }
           .rowIntro .mobileIntro .nav ul li .tinyCircle {
             border: 2px solid black;
             width: 7px;
             height: 7px;
             display: block;
             border-radius: 100px;
-            margin-bottom: 2px; } }
+            margin-bottom: 2px; }
+    .rowIntro .mobileIntro .arrowDownIntroMobile {
+      padding-top: 20px; }
+      .rowIntro .mobileIntro .arrowDownIntroMobile .arrow {
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+        width: 35px;
+        height: 35px;
+        margin: 0px auto;
+        display: block;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 0;
+        -webkit-animation: 1s fadeIn ease-in 5s;
+        -moz-animation: 1s fadeIn ease-in 5s;
+        animation: 1s fadeIn ease-in 5s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; } }
 
 @media only screen and (max-width: 1050px) {
   .arrowDownAboutMe {
@@ -825,8 +830,24 @@
         margin-left: 10px;
         cursor: pointer; }
     .rowAboutMe .astroText .arrowDownAboutMeMobile {
-      display: block;
-      margin-top: 40px; } }
+      padding-top: 325px; }
+      .rowAboutMe .astroText .arrowDownAboutMeMobile .arrow {
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+        width: 35px;
+        height: 35px;
+        margin: 0px auto;
+        display: block;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 0;
+        -webkit-animation: 1s fadeIn ease-in 52s;
+        -moz-animation: 1s fadeIn ease-in 52s;
+        animation: 1s fadeIn ease-in 52s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; } }
 
 @media only screen and (max-width: 1060px) {
   .rowSelectedWorks .selectedWorksSlider {
@@ -877,7 +898,26 @@
             border-radius: 5px;
             background-color: black;
             color: white;
-            text-align: center; } }
+            text-align: center; }
+    .rowMobileWorks .arrowDownWorksMobile {
+      padding-top: 50px; }
+      .rowMobileWorks .arrowDownWorksMobile .arrow {
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+        width: 35px;
+        height: 35px;
+        margin: 0px auto;
+        display: block;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 0;
+        -webkit-animation: 1s fadeIn ease-in 7s;
+        -moz-animation: 1s fadeIn ease-in 7s;
+        animation: 1s fadeIn ease-in 7s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; } }
 
 @media only screen and (max-width: 1150px) {
   .rowContact .contactBox {
