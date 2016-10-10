@@ -823,7 +823,10 @@
         margin-top: 20px;
         text-align: center;
         margin-left: 10px;
-        cursor: pointer; } }
+        cursor: pointer; }
+    .rowAboutMe .astroText .arrowDownAboutMeMobile {
+      display: block;
+      margin-top: 40px; } }
 
 @media only screen and (max-width: 1060px) {
   .rowSelectedWorks .selectedWorksSlider {
