@@ -720,8 +720,6 @@
           transition: color .5s ease; }
     .rowHeader .nav {
       display: none; }
-  .rowIntro .me {
-    width: 150px; }
   .rowIntro .regIntro {
     display: none; }
   .rowIntro .mobileIntro {
@@ -761,7 +759,7 @@
             margin-bottom: 2px; } }
 
 @media only screen and (max-width: 1050px) {
-  .arrowDownIntro, .arrowDownAboutMe {
+  .arrowDownAboutMe {
     display: none; }
   .rowAboutMe .astroText {
     font-size: 13.5px;
@@ -769,7 +767,7 @@
 
 @media only screen and (max-width: 768px) {
   .rowAboutMe .astroText {
-    width: 50%;
+    text-align: left;
     font-size: 13px; }
     .rowAboutMe .astroText .p1 {
       z-index: 903;
@@ -880,8 +878,7 @@
 
 @media only screen and (max-width: 1150px) {
   .rowContact .contactBox {
-    font-size: 15px;
-    opacity: 1; }
+    font-size: 15px; }
   .rowContact .airplane .st0 {
     stroke: #9B9898; } }
 

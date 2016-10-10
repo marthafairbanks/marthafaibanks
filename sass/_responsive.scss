@@ -31,9 +31,6 @@
     }
     //intro
     .rowIntro {
-        .me {
-            width: 150px;
-        }
         .regIntro {
             display: none;
         }
@@ -84,7 +81,7 @@
 
 //aboutMe
 @media only screen and (max-width: 1050px) {
-    .arrowDownIntro, .arrowDownAboutMe {
+    .arrowDownAboutMe {
         display: none;
     }
     .rowAboutMe {
@@ -97,7 +94,7 @@
 @media only screen and (max-width: 768px) {
     .rowAboutMe {
         .astroText {
-            width: 50%;
+            text-align: left;
             font-size: 13px;
             .p1 {
                 z-index: 903;
@@ -226,7 +223,6 @@
     .rowContact {
         .contactBox {
             font-size: 15px;
-            opacity: 1;
         }
         .airplane {
             .st0 {
