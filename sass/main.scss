@@ -8,6 +8,7 @@ $mainFont: 'Rammetto One', cursive;
 @import "robot";
 @import "selectedWorks";
 @import "contact";
+@import "responsive";
 
 
 body {
@@ -57,7 +58,9 @@ body {
         &:focus {
             color: black;
             text-decoration: none;
-
         }
-    }
+    }   
 }
+
+
+

@@ -1,5 +1,8 @@
 .rowHeader {
     padding-top: 15px;
+    .burger {
+        display: none;
+    }
     .nav{
         font-size: 20px;
         ul {
@@ -9,6 +12,14 @@
                 text-transform: lowercase;
                 display: inline-block;
                 cursor: pointer;
+                                    &:hover {
+                        color: #FC4F13 !important;
+                        -webkit-transition: color .5s ease;
+                        -moz-transition: color .5s ease;
+                        -ms-transition: color .5s ease;
+                        -o-transition: color .5s ease;
+                        transition: color .5s ease; 
+                    }
                 .tinyCircle {
                     border: 2px solid black;
                     width: 7px;

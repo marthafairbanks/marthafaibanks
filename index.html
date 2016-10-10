@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<title>Oh hey!</title>
+
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#fc4f13">
+		<meta name="theme-color" content="#fc4f13">
 		
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href= "css/unslider-dots.css" rel="stylesheet">
@@ -20,6 +27,18 @@
 			
 			<!-- HEADER -->
 			<header class = "row rowHeader">
+				<!-- MOBILE MENU -->
+				<div class = "burger">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					<div class = "burgerDrop hide">
+						<ul>
+							<li class = "aboutMe">About Me</li>
+							<a href="#works"><li>Selected Works</li></a>
+							<a href="#contact"><li class = "contact">Contact</li></a>
+						</ul>
+					</div>
+				</div>
+				<!-- END MOBILE MENU -->	
 				<div class = "col-xs-12 nav">
 					<ul>
 						<li class = "aboutMe">About Me</li>
@@ -62,24 +81,48 @@
 						<path id="mouth" class="st5" d="M51.4,141.4c0,0,13.6,25.5,33.3,0H51.4z"></path>
 					</svg>	
 				</div>
-				<div class = "col-xs-12 introText">
-					<p>Oh hey! I'm Martha, a front-end web developer in Cincinnati, OH.</p>
-				</div>
-				<div class = "col-xs-12 introButtons">
-					<div class = "col-xs-4 introNav aboutMe">
-						<span>About Me</span>
+				<!-- MOBILE INTRO -->
+				<div class = "mobileIntro">
+					<div class = "col-xs-12 introText">
+						<p>Oh hey! I'm Martha, a front-end web developer in Cincinnati, OH.</p>
 					</div>
-					<div class = "col-xs-4 introNav selectedWorks">
-						<a href="#works"><span>Selected Works</span></a>
-					</div>
-					<div class = "col-xs-4 introNav contact">
-						<a href = "#contact"><span>Contact</span></a>
-					</div>	
-				</div>
-				<div class = "col-xs-12 arrowDownIntro">
-					<div class = "arrow">
+					<div class = "col-xs-12 nav">
+						<ul>
+							<li class = "aboutMe">About Me</li>
+							<li>
+								<div class = "tinyCircle">
+								</div>
+							</li>
+							<a href="#works"><li>Selected Works</li></a>
+							<li>
+								<div class = "tinyCircle">
+								</div>
+							</li>
+							<a href="#contact"><li class = "contact">Contact</li>
+						</ul></a>
 					</div>
 				</div>	
+				<!-- END MOBILE MENU -->				
+				<div class = "regIntro">
+					<div class = "col-xs-12 introText">
+						<p>Oh hey! I'm Martha, a front-end web developer in Cincinnati, OH.</p>
+					</div>
+					<div class = "col-xs-12 introButtons">
+						<div class = "col-xs-4 introNav aboutMe">
+							<span>About Me</span>
+						</div>
+						<div class = "col-xs-4 introNav selectedWorks">
+							<a href="#works"><span>Selected Works</span></a>
+						</div>
+						<div class = "col-xs-4 introNav contact">
+							<a href = "#contact"><span>Contact</span></a>
+						</div>	
+					</div>
+					<div class = "col-xs-12 arrowDownIntro">
+						<div class = "arrow">
+						</div>
+					</div>
+				</div>						
 			</div>
 			<!-- ABOUT ME -->
 			<div class = "row rowAboutMe hide">
@@ -134,9 +177,13 @@
 						</div>
 					</div>
 					<div class = "astroText">
-						<p class = "p1">Since I was a kid, I have loved space.The vastness of it alone amazes me - it's so big that even with all of the pencils, I couldn't begin to write down the size. The universe is full of possibilities, and although I doubt there is a planet of girl wizards, there really is no end to what could exist.</p>
+						<p class = "p1">Since I was a kid, I have loved space. The vastness of it alone amazes me - it's so big that even with all of the pencils, I couldn't begin to write down it's size. The universe is full of possibilities, and although I doubt there is a planet of girl wizards, there really is no end to what could exist.</p>
 						<p class = "p2">Unfortunately, being an astronaut was never going to happen. I'm scared of heights, the dark, and I have bad eyes. Luckily the internet holds the same infinite wonder. Plus I get to stay on the ground, my screen lights up, and it would almost be weird if a programmer didn't wear glasses.</p>
 						<p class = "p3">I'm thrilled to be apart of something so uncharted and undefined. In 20 years, the internet will be unrecognizable to us today. I am dedicated to learning as many new languages and technologies possible so that I may have a tiny fraction of influence on what the web will become.</p>
+						<ul class = "mobileButt">
+							<a href="#works"><li><span>Selected Works</span></li></a>
+							<a href= "#contact"><li><span>Contact</span></li></a>
+						</ul>
 					</div>
 					<div class = "col-xs-12 arrowDownAboutMe">
 						<div class = "arrow">
@@ -282,20 +329,139 @@
 						</svg>	
 				</div>
 			</div>
+			<!-- MOBILE WORKS -->
+			<div class = "row rowMobileWorks">
+				<div class = "mobileWorksSlider">
+					<ul>
+						<!-- PLACEHOLDER -->
+						<li class = "col-xs-12 mobileWork">   	
+						   	<div class = "col-xs-6">	
+			    				<a href = "http://placeholder.marthafairbanks.com" target="_blank"><img src = "images/placeholder.svg"></a>
+			    			</div>
+			    			<div class = "col-xs-6">
+			    				<p class = "title">::Placeholder</p>
+			    				<div class = "links">
+				    				<ul>
+				    					<li class = "descLink">Description</li>
+				    					<a href = "http://placeholder.marthafairbanks.com" target="_blank"><li>View the site</li></a>
+				    					<a href = "https://github.com/marthafairbanks/placeholder" target="_blank"><li>View the code</li></a>
+				    				</ul>
+			    				</div>	
+			    			</div>
+			    			<div class = "col-xs-12 description hide">
+				    			<p>::Placeholder was created to quickly provide web and print designers with custom dummy text and filler images for their projects. Users can create dummy text with their own words, saved words from other visitors, or through four external APIs- in any desired combination or length. Additionally, users may search for images based on a keyword, returning four images along with their dimensions, a direct link to that image, and a ready-to-use HTML image tag. Users can further customize their search through specifying the image dimensions. </p><ul class = "tech">
+			    					<li><span>HTML5</span></li>
+			    					<li><span>CSS3</span></li>
+			    					<li><span>SASS</span></li>
+			    					<li><span>AngularJS</span></li>
+			    					<li><span>Bootstrap</span></li>
+			    					<li><span>BackAnd</span></li>
+			    					<li><span>AJAX</span></li>
+			    					<li><span>Responsive</span></li>
+			    				</ul>
+			    			</div>
+			    		</li>
+			    		<!-- HTML TIMELINES -->
+			    		<li class = "col-xs-12 mobileWork">   	
+						   	<div class = "col-xs-6">	
+			    				<a href = "https://htmltimelines.herokuapp.com/index.html" target="_blank"><img src = "images/html.svg"></a>
+			    			</div>
+			    			<div class = "col-xs-6">
+			    				<p class = "title">HTML Timelines</p>
+			    				<div class = "links">
+				    				<ul>
+				    					<li class = "descLink">Description</li>
+				    					<a href = "https://htmltimelines.herokuapp.com/index.html" target="_blank"><li>Visit the site</li></a>
+				    					<a href = "https://github.com/marthafairbanks/HTMLTimelines" target="_blank"><li>See the code</li></a>
+				    				</ul>
+			    				</div>	
+			    			</div>
+			    			<div class = "col-xs-12 description hide">
+				    			<p>HTML Timelines is a project created to demonstrate positioning and responsive layouts using HTML5, CSS3, and SASS. The layout features three tiers of formatting for computer, tablet, and phone screen widths. Personally, this site also served as my introduction to CSS animations using keyframes, which you may have noticed I have become pretty fascinated with.</p>
+				    			<ul class = "tech">
+			    					<li><span>HTML5</span></li>
+			    					<li><span>CSS3</span></li>
+			    					<li><span>SASS</span></li>
+			    					<li><span>Bootstrap</span></li>
+			    					<li><span>Responsive</span></li>
+			   					</ul>
+
+			    			</div>
+			    		</li>
+			    		<!-- CRICKET SCORECARD -->
+			    		<li class = "col-xs-12 mobileWork">   	
+						   	<div class = "col-xs-6">	
+			    				<a href = "https://cricketscorecard.herokuapp.com" target="_blank"><img src = "images/cricket.svg"></a>
+			    			</div>
+			    			<div class = "col-xs-6">
+			    				<p class = "title">Cricket Scorecard</p>
+			    				<div class = "links">
+				    				<ul>
+				    					<li class = "descLink">Description</li>
+				    					<a href = "https://cricketscorecard.herokuapp.com" target="_blank"><li>Visit the site</li></a>
+				    					<a href = "https://github.com/marthafairbanks/CricketScorecard" target="_blank"><li>See the code</li></a>
+				    				</ul>
+			    				</div>	
+			    			</div>
+			    			<div class = "col-xs-12 description hide">
+				    			<p>Cricket Scorecard is an easy way to keep score of your cricket dart game. Fully functional for everyone upon loading, registered users also have the option of saving their game score data for use at a later date. Designed with smaller devices in mind, the layout scales up nicely, allowing users to enjoy the same functionality no matter the screen size.</p>
+				    			<ul class = "tech">
+			    					<li><span>HTML5</span></li>
+			    					<li><span>CSS3</span></li>
+			    					<li><span>SASS</span></li>
+			    					<li><span>AngularJS</span></li>
+			   						<li><span>Bootstrap</span></li>
+			 						<li><span>BackAnd</span></li>
+			    					<li><span>Responsive</span></li>
+			   					</ul>
+
+			    			</div>
+			    		</li>
+			    		<!-- SHOPSITE ROUTING -->
+			    		<li class = "col-xs-12 mobileWork">   	
+						   	<div class = "col-xs-6">	
+			    				<a href = "https://trashpanda.herokuapp.com" target="_blank"><img src = "images/shopsite.svg"></a>
+			    			</div>
+			    			<div class = "col-xs-6">
+			    				<p class = "title titleSmall">Trash Panda's Discount Critters</p>
+			    				<div class = "links">
+				    				<ul>
+				    					<li class = "descLink">Description</li>
+				    					 <a href = "https://trashpanda.herokuapp.com" target="_blank"><li>Visit the site</li></a>
+				    					<a href = "https://github.com/marthafairbanks/shopSiteRouting" target="_blank"><li>See the code</li></a>
+				    				</ul>
+			    				</div>	
+			    			</div>
+			    			<div class = "col-xs-12 description hide">
+				    			<p>Trash Panda's Discount Critters is a fictional online shop utilizing AngularJS's UI-Routing. Each shop item is connected through the state of the application to a dynamically changing application view. Meaning that despite being a single page application, a user is able to seamlessly click through the shop items as though it was a multiple page site without suffering any delay from loading. Additionally, this site features a weather widget built using custom directives displaying the current temperature and description along with matching weather icons.</p>
+				    			<ul class = "tech">
+			    					<li><span>HTML5</span></li>
+			    					<li><span>CSS3</span></li>
+			    					<li><span>SASS</span></li>
+			    					<li><span>AngularJS</span></li>
+			   						<li><span>Bootstrap</span></li>
+								</ul>
+
+
+			    			</div>
+			    		</li>
+		    		</ul>
+		    	</div>		    			    			
+    		</div>				
 			<!-- SELECTED WORKS SLIDER -->
 			<div class = "row rowSelectedWorks hide">
 				<div class="selectedWorksSlider">
     				<ul>
     					<!-- PLACEHOLDER -->
     					<li>
-    						<div class = "col-xs-4">	
+    						<div class = "col-md-4 col-xs-6 image">	
     							<a href = "http://placeholder.marthafairbanks.com" target="_blank"><img src = "images/placeholder.svg"></a>
     						</div>
     						<div class = "col-xs-6 description">
 	    						<p><span class = "title">::Placeholder</span> was created to quickly provide web and print designers with custom dummy text and filler images for their projects. Users can create dummy text with their own words, saved words from other visitors, or through four external APIs- in any desired combination or length. Additionally, users may search for images based on a keyword, returning four images along with their dimensions, a direct link to that image, and a ready-to-use HTML image tag. Users can further customize their search through specifying the image dimensions. </p>
     							<p class = "links">Click <a href = "http://placeholder.marthafairbanks.com" target="_blank">here</a> to view the project live or go straight to the code on <a href = "https://github.com/marthafairbanks/placeholder" target="_blank">GitHub</a>.</p>
     						</div>
-    						<div class = "col-xs-2">    						
+    						<div class = "col-md-2 col-xs-12">    						
 	    						<ul class = "tech">
 	    							<li><span>HTML5</span></li>
 	    							<li><span>CSS3</span></li>
@@ -310,14 +476,14 @@
     					</li>
     					<!-- HTML TIMELINES -->
     					<li>
-    						<div class = "col-xs-4">	
+    						<div class = " col-md-4 col-xs-6 image">	
     							<a href = "https://htmltimelines.herokuapp.com/index.html" target="_blank"><img src = "images/html.svg"></a>
     						</div>
     						<div class = "col-xs-6 description">
 	    						<p><span class = "title">HTML Timelines</span> is a project created to demonstrate positioning and responsive layouts using HTML5, CSS3, and SASS. The layout features three tiers of formatting for computer, tablet, and phone screen widths. Personally, this site also served as my introduction to CSS animations using keyframes, which you may have noticed I have become pretty fascinated with.</p>
     							<p class = "links">Click <a href = "https://htmltimelines.herokuapp.com/index.html" target="_blank">here</a> to view the project live or go straight to the code on <a href = "https://github.com/marthafairbanks/HTMLTimelines" target="_blank">GitHub</a>.</p>
     						</div>
-    						<div class = "col-xs-2">    						
+    						<div class = "col-md-2 col-xs-12">    						
 	    						<ul class = "tech singleColumn">
 	    							<li><span>HTML5</span></li>
 	    							<li><span>CSS3</span></li>
@@ -329,14 +495,14 @@
     					</li>
     					<!-- CRICKET SCORECARD -->
     					<li>
-    						<div class = "col-xs-4">	
+    						<div class = "col-md-4 col-xs-6 image">	
     							<a href = "https://cricketscorecard.herokuapp.com" target="_blank"><img src = "images/cricket.svg"></a>
     						</div>
     						<div class = "col-xs-6 description">
 	    						<p><span class = "title">Cricket Scorecard</span> is an easy way to keep score of your cricket dart game. Fully functional for everyone upon loading, registered users also have the option of saving their game score data for use at a later date. Designed with smaller devices in mind, the layout scales up nicely, allowing users to enjoy the same functionality no matter the screen size.</p>
     							<p class = "links">Click <a href = "https://cricketscorecard.herokuapp.com" target="_blank">here</a> to view the project live or go straight to the code on <a href = "https://github.com/marthafairbanks/CricketScorecard" target="_blank">GitHub</a>.</p>
     						</div>
-    						<div class = "col-xs-2">    						
+    						<div class = "col-md-2 col-xs-12">    						
 	    						<ul class = "tech">
 	    							<li><span>HTML5</span></li>
 	    							<li><span>CSS3</span></li>
@@ -350,14 +516,14 @@
     					</li>
     					<!-- SHOPSITE ROUTING -->
     					<li>
-    						<div class = "col-xs-4">	
+    						<div class = "col-md-4 col-xs-6 image">	
     							<a href = "https://trashpanda.herokuapp.com" target="_blank"><img src = "images/shopsite.svg"></a>
     						</div>
     						<div class = "col-xs-6 description">
 	    						<p><span class = "title">Trash Panda's Discount Critters</span> is a fictional online shop utilizing AngularJS's UI-Routing. Each shop item is connected through the state of the application to a dynamically changing application view. Meaning that despite being a single page application, a user is able to seamlessly click through the shop items as though it was a multiple page site without suffering any delay from loading. Additionally, this site features a weather widget built using custom directives displaying the current temperature and description along with matching weather icons.</p>
     							<p class = "links">Click <a href = "https://trashpanda.herokuapp.com" target="_blank">here</a> to view the project live or go straight to the code on <a href = "https://github.com/marthafairbanks/shopSiteRouting" target="_blank">GitHub</a>.</p>
     						</div>
-    						<div class = "col-xs-2">    						
+    						<div class = "col-md-2 col-xs-12">    						
 	    						<ul class = "tech singleColumn">
 	    							<li><span>HTML5</span></li>
 	    							<li><span>CSS3</span></li>

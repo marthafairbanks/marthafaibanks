@@ -191,8 +191,40 @@
   to {
     opacity: 0; } }
 
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .rowHeader {
   padding-top: 15px; }
+  .rowHeader .burger {
+    display: none; }
   .rowHeader .nav {
     font-size: 20px; }
     .rowHeader .nav ul {
@@ -202,6 +234,13 @@
         text-transform: lowercase;
         display: inline-block;
         cursor: pointer; }
+        .rowHeader .nav ul li:hover {
+          color: #FC4F13 !important;
+          -webkit-transition: color .5s ease;
+          -moz-transition: color .5s ease;
+          -ms-transition: color .5s ease;
+          -o-transition: color .5s ease;
+          transition: color .5s ease; }
         .rowHeader .nav ul li .tinyCircle {
           border: 2px solid black;
           width: 7px;
@@ -213,6 +252,8 @@
 .rowIntro {
   margin-top: 70px;
   margin-bottom: 70px; }
+  .rowIntro .mobileIntro {
+    display: none; }
   .rowIntro .me {
     width: 200px;
     margin: 0px auto;
@@ -251,7 +292,7 @@
       stroke-width: 3.5;
       stroke-linejoin: round;
       stroke-miterlimit: 10; }
-  .rowIntro .introText {
+  .rowIntro .regIntro .introText {
     margin: 0px auto;
     display: block;
     float: none;
@@ -259,19 +300,19 @@
     border: 4px solid black;
     width: 596px;
     padding-top: 10px; }
-    .rowIntro .introText p {
+    .rowIntro .regIntro .introText p {
       white-space: nowrap;
       overflow: hidden;
       width: 500px;
       width: 60ch;
       animation: type 5s steps(60, end); }
-  .rowIntro .introButtons {
+  .rowIntro .regIntro .introButtons {
     margin: 0px auto;
     display: block;
     float: none;
     width: 437px;
     margin-top: 20px; }
-    .rowIntro .introButtons .introNav {
+    .rowIntro .regIntro .introButtons .introNav {
       border: 4px solid black;
       width: auto;
       padding-top: 10px;
@@ -280,7 +321,7 @@
       margin: 0px auto;
       display: inline-block;
       float: none; }
-    .rowIntro .introButtons .aboutMe {
+    .rowIntro .regIntro .introButtons .aboutMe {
       opacity: 0;
       -webkit-animation: 0.5s fadeIn ease-in 4.5s;
       -moz-animation: 0.5s fadeIn ease-in 4.5s;
@@ -288,7 +329,7 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-    .rowIntro .introButtons .selectedWorks {
+    .rowIntro .regIntro .introButtons .selectedWorks {
       opacity: 0;
       -webkit-animation: 0.5s fadeIn ease-in 5.25s;
       -moz-animation: 0.5s fadeIn ease-in 5.25s;
@@ -296,7 +337,7 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-    .rowIntro .introButtons .contact {
+    .rowIntro .regIntro .introButtons .contact {
       opacity: 0;
       -webkit-animation: 0.5s fadeIn ease-in 6s;
       -moz-animation: 0.5s fadeIn ease-in 6s;
@@ -304,9 +345,9 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-  .rowIntro .arrowDownIntro {
+  .rowIntro .regIntro .arrowDownIntro {
     padding-top: 50px; }
-    .rowIntro .arrowDownIntro .arrow {
+    .rowIntro .regIntro .arrowDownIntro .arrow {
       border-bottom: 4px solid black;
       border-right: 4px solid black;
       width: 35px;
@@ -410,11 +451,12 @@
         -moz-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
   .rowAboutMe .astroText {
-    z-index: 1000;
+    z-index: 900;
     position: absolute;
     width: 45%;
     top: 0px;
-    left: 45%; }
+    left: 45%;
+    text-align: justify; }
     .rowAboutMe .astroText p {
       padding: 10px; }
     .rowAboutMe .astroText .p1 {
@@ -444,6 +486,8 @@
       -webkit-animation-fill-mode: forwards;
       -moz-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
+    .rowAboutMe .astroText .mobileButt {
+      opacity: 0; }
   .rowAboutMe .arrowDownAboutMe {
     margin-top: -20px; }
     .rowAboutMe .arrowDownAboutMe .arrow {
@@ -474,6 +518,9 @@
     padding-right: 10px;
     text-align: center; }
 
+.rowMobileWorks {
+  display: none; }
+
 .rowRobot {
   padding-top: 100px;
   margin-bottom: 94px; }
@@ -493,9 +540,9 @@
       -moz-animation: 0.75s zap infinite;
       animation: 0.75s zap infinite; }
   .rowRobot .moveRobby {
-    -webkit-animation: 15s gobot 1.5s;
-    -moz-animation: 15s gobot 1.5s;
-    animation: 15s gobot 1.5s;
+    -webkit-animation: 10s gobot 1.5s;
+    -moz-animation: 10s gobot 1.5s;
+    animation: 10s gobot 1.5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
@@ -536,16 +583,18 @@
   .rowSelectedWorks .unslider-arrow {
     padding: 5px;
     border: 4px solid black;
-    margin-right: 10%;
-    margin-left: 10%; }
+    margin-right: 5%;
+    margin-left: 5%; }
   .rowSelectedWorks .selectedWorksSlider {
     padding-top: 15px;
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     display: block;
     margin-bottom: 20px; }
-    .rowSelectedWorks .selectedWorksSlider ul li img {
-      display: block; }
+    .rowSelectedWorks .selectedWorksSlider ul li .image {
+      padding-left: 0px; }
+      .rowSelectedWorks .selectedWorksSlider ul li .image img {
+        display: block; }
     .rowSelectedWorks .selectedWorksSlider ul li .description {
       border: 4px solid black;
       border-right: 4px solid black;
@@ -567,11 +616,12 @@
             -o-transition: color .5s ease;
             transition: color .5s ease; }
     .rowSelectedWorks .selectedWorksSlider ul li .tech {
-      padding-top: 10px; }
+      padding-top: 10px;
+      text-align: center; }
       .rowSelectedWorks .selectedWorksSlider ul li .tech li {
         margin-bottom: 20px;
-        float: right;
-        display: block;
+        float: none;
+        display: inline-block;
         padding-left: 10px; }
         .rowSelectedWorks .selectedWorksSlider ul li .tech li span {
           padding: 5px;
@@ -602,7 +652,7 @@
       animation-fill-mode: forwards; }
 
 .rowContact {
-  margin-bottom: 190px; }
+  margin-bottom: 250px; }
   .rowContact .contactTitle {
     text-align: center;
     font-size: 20px;
@@ -647,6 +697,193 @@
           -ms-transition: color .5s ease;
           -o-transition: color .5s ease;
           transition: color .5s ease; }
+
+@media only screen and (max-width: 625px) {
+  .rowHeader {
+    float: right; }
+    .rowHeader .burger {
+      cursor: pointer;
+      display: block;
+      text-align: right;
+      font-size: 25px;
+      padding-right: 15px; }
+      .rowHeader .burger .burgerDrop li {
+        font-size: 15px;
+        padding-top: 5px;
+        list-style-type: none; }
+        .rowHeader .burger .burgerDrop li:hover {
+          color: #FC4F13 !important;
+          -webkit-transition: color .5s ease;
+          -moz-transition: color .5s ease;
+          -ms-transition: color .5s ease;
+          -o-transition: color .5s ease;
+          transition: color .5s ease; }
+    .rowHeader .nav {
+      display: none; }
+  .rowIntro .me {
+    width: 150px; }
+  .rowIntro .regIntro {
+    display: none; }
+  .rowIntro .mobileIntro {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .rowIntro .mobileIntro .introText {
+      text-align: center;
+      margin: 0px auto;
+      display: block;
+      margin-top: 20px;
+      border: 4px solid black;
+      padding-top: 10px; }
+    .rowIntro .mobileIntro .nav {
+      font-size: 15px;
+      padding-top: 20px; }
+      .rowIntro .mobileIntro .nav ul {
+        padding-left: 0px;
+        text-align: center; }
+        .rowIntro .mobileIntro .nav ul li {
+          text-transform: lowercase;
+          display: inline-block;
+          cursor: pointer; }
+          .rowIntro .mobileIntro .nav ul li:hover {
+            color: #FC4F13 !important;
+            -webkit-transition: color .5s ease;
+            -moz-transition: color .5s ease;
+            -ms-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease; }
+          .rowIntro .mobileIntro .nav ul li .tinyCircle {
+            border: 2px solid black;
+            width: 7px;
+            height: 7px;
+            display: block;
+            border-radius: 100px;
+            margin-bottom: 2px; } }
+
+@media only screen and (max-width: 1050px) {
+  .arrowDownIntro, .arrowDownAboutMe {
+    display: none; }
+  .rowAboutMe .astroText {
+    font-size: 13.5px;
+    width: 50%; } }
+
+@media only screen and (max-width: 768px) {
+  .rowAboutMe .astroText {
+    width: 50%;
+    font-size: 13px; }
+    .rowAboutMe .astroText .p1 {
+      z-index: 903;
+      position: absolute;
+      top: 75px;
+      background-color: white;
+      -webkit-animation: 15s fadeInOut ease-in 7s;
+      -moz-animation: 15s fadeInOut ease-in 7s;
+      animation: 15s fadeInOut ease-in 7s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+    .rowAboutMe .astroText .p2 {
+      z-index: 902;
+      position: absolute;
+      top: 75px;
+      background-color: white;
+      -webkit-animation: 15s fadeInOut ease-in 22s;
+      -moz-animation: 15s fadeInOut ease-in 22s;
+      animation: 15s fadeInOut ease-in 22s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+    .rowAboutMe .astroText .p3 {
+      z-index: 901;
+      position: absolute;
+      top: 75px;
+      background-color: white;
+      -webkit-animation: 15s fadeInOut ease-in 37s;
+      -moz-animation: 15s fadeInOut ease-in 37s;
+      animation: 15s fadeInOut ease-in 37s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+    .rowAboutMe .astroText .mobileButt {
+      z-index: 904;
+      position: absolute;
+      top: 150px;
+      list-style-type: none;
+      margin: 0px auto;
+      display: block;
+      -webkit-animation: 2s fadeIn ease-in 52s;
+      -moz-animation: 2s fadeIn ease-in 52s;
+      animation: 2s fadeIn ease-in 52s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+      .rowAboutMe .astroText .mobileButt span {
+        border: 4px solid black;
+        padding: 10px;
+        font-size: 15px;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 10px;
+        cursor: pointer; } }
+
+@media only screen and (max-width: 1060px) {
+  .rowSelectedWorks .selectedWorksSlider {
+    width: 100%; }
+    .rowSelectedWorks .selectedWorksSlider .tech {
+      margin-top: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .rowRobot {
+    display: none !important; }
+  .rowSelectedWorks {
+    display: none !important; }
+  .rowMobileWorks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 50px; }
+    .rowMobileWorks .unslider-arrow {
+      padding: 5px;
+      border: 4px solid black; }
+    .rowMobileWorks .mobileWork {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      .rowMobileWorks .mobileWork .title {
+        text-transform: uppercase;
+        font-size: 18px; }
+      .rowMobileWorks .mobileWork .titleSmall {
+        font-size: 15px; }
+      .rowMobileWorks .mobileWork .links ul {
+        cursor: pointer; }
+        .rowMobileWorks .mobileWork .links ul li {
+          color: #337ab7 !important; }
+      .rowMobileWorks .mobileWork .description {
+        padding-top: 20px; }
+      .rowMobileWorks .mobileWork .tech {
+        padding-top: 10px;
+        padding-left: 0px; }
+        .rowMobileWorks .mobileWork .tech li {
+          margin-bottom: 20px;
+          padding-right: 10px;
+          list-style-type: none;
+          display: inline-block; }
+          .rowMobileWorks .mobileWork .tech li span {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-align: center; } }
+
+@media only screen and (max-width: 1150px) {
+  .rowContact .contactBox {
+    font-size: 15px;
+    opacity: 1; }
+  .rowContact .airplane .st0 {
+    stroke: #9B9898; } }
 
 body {
   font-family: "Rammetto One", cursive;

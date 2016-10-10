@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
 
+  checkSize();
+  $(window).resize(checkSize);
+  $(window).resize(checkSize2);
+
   $(".rowIntro").addClass("show");
 
   $('a').click(function(){
@@ -33,8 +37,7 @@ $(document).ready(function() {
     			$(".robot").addClass("moveRobby");
     			$(".arrowDownIntro").addClass("invisible");
           $(".arrowDownAboutMe").addClass("invisible");
-    			$(".worksTitle").addClass("show");
-    			setTimeout(hideRobShowWork, 10000); 
+    			setTimeout(hideRobShowWork, 7500); 
   			}
   		},
   		offset: '30%', 
@@ -46,11 +49,13 @@ $(document).ready(function() {
       handler: function(direction) {
         if (direction !=='up') {
           $(".contactBox").addClass("visible");
-          $(".arrowDownSelectedWorks").addClass("invisible");
-          setTimeout(function(){
-            $('#dash10').addClass('invisible');
-            $('#dash11').addClass('invisible');
-          }, 1250);
+          $(".arrowDownSelectedWorks").addClass("invisible");  
+          if ($(".contactBox").css("font-size") !== "15px" ){
+            setTimeout(function(){
+              $('#dash10').addClass('invisible');
+              $('#dash11').addClass('invisible');
+            }, 1250);
+          } 
 
         }
       },
@@ -71,6 +76,34 @@ $(document).ready(function() {
         }
       },
       offset: '-2%', 
-  });    
+  });
+  //mobile menu
+  $(".burger").click(function() {
+    $(".burgerDrop").toggleClass("hide show");
+  });
+
+  //mobile selectedWorks
+  $(".descLink").click(function() {
+    $(".description").toggleClass("hide show");  
+  });
+  $('.mobileWorksSlider').unslider({ 
+    dots: true,
+    arrows: true,
+    infinite: true,
+  });
+      
+  //mobile contact
+  function checkSize(){
+    if ($(".contactBox").css("font-size") == "15px") {
+      $('#dash10').removeClass('invisible');
+      $('#dash11').removeClass('invisible');
+    }
+  }  
+  function checkSize2() {
+    if ($(".contactBox").css("font-size") != "15px") {
+      $('#dash10').addClass('invisible');
+      $('#dash11').addClass('invisible');
+    }
+  }          
 
 });

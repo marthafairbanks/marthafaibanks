@@ -50,11 +50,12 @@
 	    }
 	}
 	.astroText {
-		z-index: 1000;
+		z-index: 900;
 		position: absolute;
 		width: 45%;
 		top: 0px;
 		left: 45%;
+		text-align: justify;
 		p {
 			padding: 10px;
 		}
@@ -78,6 +79,9 @@
 	 		
 	 		@include animationMix (0.5s, fadeIn, 28s);
 	 		@include forward;			
+		}
+		.mobileButt {
+			opacity: 0;
 		}
 	}
     .arrowDownAboutMe {

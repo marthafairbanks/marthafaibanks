@@ -1,0 +1,238 @@
+//responsive
+@media only screen and (max-width: 625px) {
+    //mobile menu
+    .rowHeader {
+        float: right;
+        .burger {
+            cursor: pointer;
+            display: block;
+            text-align: right;
+            font-size: 25px;
+            padding-right: 15px;
+            .burgerDrop {
+                li {
+                    font-size: 15px;
+                    padding-top: 5px;
+                    list-style-type: none;
+                    &:hover {
+                        color: #FC4F13 !important;
+                        -webkit-transition: color .5s ease;
+                        -moz-transition: color .5s ease;
+                        -ms-transition: color .5s ease;
+                        -o-transition: color .5s ease;
+                        transition: color .5s ease; 
+                    }
+                }   
+            }                
+        }
+        .nav {
+            display: none;
+        }
+    }
+    //intro
+    .rowIntro {
+        .me {
+            width: 150px;
+        }
+        .regIntro {
+            display: none;
+        }
+        .mobileIntro {
+            display: block;
+            margin-left: 10px;
+            margin-right: 10px;
+            .introText {
+                text-align: center;
+                margin: 0px auto;
+                display: block;
+                margin-top: 20px;
+                border: 4px solid black;
+                padding-top: 10px;
+            }
+            .nav {
+                font-size: 15px;
+                padding-top: 20px;
+                ul {
+                    padding-left: 0px;
+                    text-align: center;
+                    li {
+                        text-transform: lowercase;
+                        display: inline-block;
+                        cursor: pointer;
+                        &:hover {
+                            color: #FC4F13 !important;
+                            -webkit-transition: color .5s ease;
+                            -moz-transition: color .5s ease;
+                            -ms-transition: color .5s ease;
+                            -o-transition: color .5s ease;
+                            transition: color .5s ease; 
+                        }
+                        .tinyCircle {
+                            border: 2px solid black;
+                            width: 7px;
+                            height: 7px;
+                            display: block;
+                            border-radius: 100px;
+                            margin-bottom: 2px;
+                        }
+                    }    
+                }
+            }      
+        }
+    }                
+}
+
+//aboutMe
+@media only screen and (max-width: 1050px) {
+    .arrowDownIntro, .arrowDownAboutMe {
+        display: none;
+    }
+    .rowAboutMe {
+        .astroText {
+            font-size: 13.5px;
+            width: 50%;
+        }
+    }        
+}
+@media only screen and (max-width: 768px) {
+    .rowAboutMe {
+        .astroText {
+            width: 50%;
+            font-size: 13px;
+            .p1 {
+                z-index: 903;
+                position: absolute;
+                top: 75px;
+                background-color: white;
+                @include animationMix (15s, fadeInOut, 7s);
+                @include forward;
+            }
+            .p2 {
+                z-index: 902;
+                position: absolute;
+                top: 75px;
+                background-color: white;
+                @include animationMix (15s, fadeInOut, 22s);
+                @include forward;                
+            }
+            .p3 {
+                z-index: 901;
+                position: absolute;
+                top: 75px;
+                background-color: white;
+                @include animationMix (15s, fadeInOut, 37s);
+                @include forward; 
+            }
+            .mobileButt {
+                z-index: 904;
+                position: absolute;
+                top: 150px;
+                list-style-type: none;
+                margin: 0px auto;
+                display: block;
+
+                @include animationMix (2s, fadeIn, 52s);
+                @include forward;
+                
+                span {
+                    border: 4px solid black;
+                    padding: 10px;
+                    font-size: 15px;
+                    display: inline-block;
+                    margin-top: 20px;
+                    text-align: center;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }    
+    }
+}  
+
+//selectedWorks
+@media only screen and (max-width: 1060px) {
+    .rowSelectedWorks {
+        .selectedWorksSlider {
+            width: 100%;
+            .tech {
+                margin-top: 20px;
+            }
+        }
+    }    
+}
+@media only screen and (max-width: 768px) {
+    .rowRobot {
+        display: none !important;
+    }
+    .rowSelectedWorks {
+        display: none !important;
+    }
+    .rowMobileWorks {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0px auto;
+        display: block;
+        margin-bottom: 50px;
+        .unslider-arrow {
+            padding: 5px;
+            border: 4px solid black;
+        }
+        .mobileWork {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            .title {
+            text-transform: uppercase;
+            font-size: 18px;
+            }
+            .titleSmall{
+                font-size: 15px;
+            }
+            .links {
+                ul {
+                    cursor: pointer;
+                    li {
+                        color: #337ab7 !important;
+                    }    
+                }
+            }
+            .description {
+                padding-top: 20px;
+            }
+            .tech {
+                padding-top: 10px;
+                padding-left: 0px;
+                li {
+                    margin-bottom: 20px;
+                    padding-right: 10px;
+                    list-style-type: none;
+                    display: inline-block;
+                    span {
+                        padding:5px;
+                        border-radius: 5px;
+                        background-color: black;
+                        color: white;
+                        text-align: center;
+                    }
+                }   
+            }            
+        }    
+    }        
+}
+
+//contact
+@media only screen and (max-width: 1150px) {
+    .rowContact {
+        .contactBox {
+            font-size: 15px;
+            opacity: 1;
+        }
+        .airplane {
+            .st0 {
+                stroke: #9B9898;
+
+            }
+        }
+    }    
+}

@@ -9,7 +9,9 @@
 		text-align: center;
 	}	
 }
-
+.rowMobileWorks {
+	display: none;
+}
 .rowRobot {
 	padding-top: 100px;
 	margin-bottom: 94px;		
@@ -34,9 +36,9 @@
 		}									 
 	}
 	.moveRobby {	
-		-webkit-animation: 15s gobot 1.5s;  
-	 	-moz-animation:15s gobot 1.5s;
-	 	animation:15s gobot 1.5s;
+		-webkit-animation: 10s gobot 1.5s;  
+	 	-moz-animation:10s gobot 1.5s;
+	 	animation:10s gobot 1.5s;
 	 	@include forward;
 	 	#wheel1 {
 			@include bumpAnimation (0.5s);
