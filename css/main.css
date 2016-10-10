@@ -728,7 +728,8 @@
       padding-top: 10px; }
     .rowIntro .mobileIntro .nav {
       font-size: 15px;
-      padding-top: 20px; }
+      padding-top: 20px;
+      padding-right: 0px; }
       .rowIntro .mobileIntro .nav ul {
         padding-left: 0px;
         text-align: center; }
@@ -861,7 +862,7 @@
   .rowSelectedWorks {
     display: none !important; }
   .rowMobileWorks {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 50px;
     margin: 0px auto;
     display: block;
@@ -900,7 +901,7 @@
             color: white;
             text-align: center; }
     .rowMobileWorks .arrowDownWorksMobile {
-      padding-top: 50px; }
+      padding-top: 100px; }
       .rowMobileWorks .arrowDownWorksMobile .arrow {
         border-bottom: 4px solid black;
         border-right: 4px solid black;
@@ -920,10 +921,12 @@
         animation-fill-mode: forwards; } }
 
 @media only screen and (max-width: 1150px) {
-  .rowContact .contactBox {
-    font-size: 15px; }
-  .rowContact .airplane .st0 {
-    stroke: #9B9898; } }
+  .rowContact {
+    margin-bottom: 450px; }
+    .rowContact .contactBox {
+      font-size: 15px; }
+    .rowContact .airplane .st0 {
+      stroke: #9B9898; } }
 
 body {
   font-family: "Rammetto One", cursive;

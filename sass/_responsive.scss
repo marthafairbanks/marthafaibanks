@@ -41,6 +41,7 @@
             .nav {
                 font-size: 15px;
                 padding-top: 20px;
+                padding-right: 0px;
                 ul {
                     padding-left: 0px;
                     text-align: center;
@@ -190,7 +191,7 @@
         display: none !important;
     }
     .rowMobileWorks {
-        padding-top: 50px;
+        padding-top: 75px;
         padding-bottom: 50px;
         margin: 0px auto;
         display: block;
@@ -241,7 +242,7 @@
             }            
         }
         .arrowDownWorksMobile {
-            padding-top: 50px;
+            padding-top: 100px;
             .arrow {
                 border-bottom: 4px solid black;
                 border-right: 4px solid black;
@@ -265,6 +266,7 @@
 //contact
 @media only screen and (max-width: 1150px) {
     .rowContact {
+    margin-bottom: 450px;        
         .contactBox {
             font-size: 15px;
         }
