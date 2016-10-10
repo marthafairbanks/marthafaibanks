@@ -37,7 +37,14 @@ $(document).ready(function() {
     			$(".robot").addClass("moveRobby");
     			$(".arrowDownIntro").addClass("invisible");
           $(".arrowDownAboutMe").addClass("invisible");
-    			setTimeout(hideRobShowWork, 7500); 
+    			setTimeout(hideRobShowWork, 7500);
+          // if ($(".rowMobileWorks").css("display") == "block") {
+          //   $(".arrowDownIntroMobile").addClass("invisible");
+          //   setTimeout(function(){
+          //     $('.arrowDownWorksMobile').addClass('visible');
+
+          //   }, 5000);
+          // }
   			}
   		},
   		offset: '30%', 
