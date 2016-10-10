@@ -829,26 +829,7 @@
         margin-top: 20px;
         text-align: center;
         margin-left: 10px;
-        cursor: pointer; }
-    .rowAboutMe .astroText .arrowDownAboutMeMobile {
-      padding-top: 325px; }
-      .rowAboutMe .astroText .arrowDownAboutMeMobile .arrow {
-        border-bottom: 4px solid black;
-        border-right: 4px solid black;
-        width: 35px;
-        height: 35px;
-        margin: 0px auto;
-        display: block;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        transform: rotate(45deg);
-        opacity: 0;
-        -webkit-animation: 1s fadeIn ease-in 52s;
-        -moz-animation: 1s fadeIn ease-in 52s;
-        animation: 1s fadeIn ease-in 52s;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards; } }
+        cursor: pointer; } }
 
 @media only screen and (max-width: 1060px) {
   .rowSelectedWorks .selectedWorksSlider {
@@ -922,7 +903,8 @@
 
 @media only screen and (max-width: 1150px) {
   .rowContact {
-    margin-bottom: 450px; }
+    margin-bottom: 425px;
+    padding-top: 50px; }
     .rowContact .contactBox {
       font-size: 15px; }
     .rowContact .airplane .st0 {
